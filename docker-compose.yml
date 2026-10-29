@@ -1,0 +1,32 @@
+services:
+  edge-api-gw:
+    image: nginx:alpine
+    container_name: edge-api-gw
+    ports:
+      - "8081:80"
+    restart: unless-stopped
+
+  ci-build-runner:
+    image: httpd:alpine
+    container_name: ci-build-runner
+    ports:
+      - "8082:80"
+    restart: unless-stopped
+
+  session-redis:
+    image: redis:alpine
+    container_name: session-redis
+    ports:
+      - "6380:6379"
+    restart: unless-stopped
+
+  customer-prod-db:
+    image: postgres:16-alpine
+    container_name: customer-prod-db
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: changeme_demo_only
+      POSTGRES_DB: customers_prod
+    ports:
+      - "5433:5432"
+    restart: unless-stopped

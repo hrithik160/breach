@@ -1,0 +1,515 @@
+{"type": "node_compromised", "id": "node-dev-laptop", "payload": {"status": "compromised"}, "ts": 1793274432203, "source": "ws"}
+{"type": "node_added", "id": "node-cloud-eks-01", "payload": {"id": "node-cloud-eks-01", "label": "Discovered Cloud Pod #1", "type": "Server", "cvss_score": 7.9, "vulnerabilities": ["CVE-2024-21626"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "10.0.40.11", "hostname": "eks-pod-01.internal", "cloud_id": "i-0cloudsim00001"}, "pos": {"x": 610, "y": 95}}, "ts": 1793274511052, "source": "cloud"}
+{"type": "edge_added", "id": "edge-cloud-in-01", "payload": {"id": "edge-cloud-in-01", "source": "node-api-gw", "target": "node-cloud-eks-01", "protocol": "HTTPS", "exploit_time_sec": 9, "status": "open"}, "ts": 1793274511052, "source": "cloud"}
+{"type": "edge_added", "id": "edge-cloud-out-01", "payload": {"id": "edge-cloud-out-01", "source": "node-cloud-eks-01", "target": "node-prod-db", "protocol": "SSH", "exploit_time_sec": 11, "status": "open"}, "ts": 1793274511052, "source": "cloud"}
+{"type": "node_added", "id": "node-cloud-eks-02", "payload": {"id": "node-cloud-eks-02", "label": "Discovered Cloud Pod #2", "type": "Server", "cvss_score": 7.9, "vulnerabilities": ["CVE-2024-21626"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "10.0.40.12", "hostname": "eks-pod-02.internal", "cloud_id": "i-0cloudsim00002"}, "pos": {"x": 610, "y": 150}}, "ts": 1793274513740, "source": "cloud"}
+{"type": "edge_added", "id": "edge-cloud-in-02", "payload": {"id": "edge-cloud-in-02", "source": "node-api-gw", "target": "node-cloud-eks-02", "protocol": "HTTPS", "exploit_time_sec": 9, "status": "open"}, "ts": 1793274513740, "source": "cloud"}
+{"type": "edge_added", "id": "edge-cloud-out-02", "payload": {"id": "edge-cloud-out-02", "source": "node-cloud-eks-02", "target": "node-prod-db", "protocol": "SSH", "exploit_time_sec": 11, "status": "open"}, "ts": 1793274513740, "source": "cloud"}
+{"type": "node_added", "id": "node-cloud-eks-03", "payload": {"id": "node-cloud-eks-03", "label": "Discovered Cloud Pod #3", "type": "Server", "cvss_score": 7.9, "vulnerabilities": ["CVE-2024-21626"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "10.0.40.13", "hostname": "eks-pod-03.internal", "cloud_id": "i-0cloudsim00003"}, "pos": {"x": 610, "y": 205}}, "ts": 1793274515140, "source": "cloud"}
+{"type": "edge_added", "id": "edge-cloud-in-03", "payload": {"id": "edge-cloud-in-03", "source": "node-api-gw", "target": "node-cloud-eks-03", "protocol": "HTTPS", "exploit_time_sec": 9, "status": "open"}, "ts": 1793274515140, "source": "cloud"}
+{"type": "edge_added", "id": "edge-cloud-out-03", "payload": {"id": "edge-cloud-out-03", "source": "node-cloud-eks-03", "target": "node-prod-db", "protocol": "SSH", "exploit_time_sec": 11, "status": "open"}, "ts": 1793274515140, "source": "cloud"}
+{"type": "node_compromised", "id": "node-sre-workstation", "payload": {"status": "compromised"}, "ts": 1793274519429, "source": "ws"}
+{"type": "node_compromised", "id": "node-sre-workstation", "payload": {"status": "compromised"}, "ts": 1793274520444, "source": "ws"}
+{"type": "node_compromised", "id": "node-sre-workstation", "payload": {"status": "compromised"}, "ts": 1793274521052, "source": "ws"}
+{"type": "node_compromised", "id": "node-sre-workstation", "payload": {"status": "compromised"}, "ts": 1793274521612, "source": "ws"}
+{"type": "node_compromised", "id": "node-sre-workstation", "payload": {"status": "compromised"}, "ts": 1793274522236, "source": "ws"}
+{"type": "node_compromised", "id": "node-sre-workstation", "payload": {"status": "compromised"}, "ts": 1793274522733, "source": "ws"}
+{"type": "node_compromised", "id": "node-sre-workstation", "payload": {"status": "compromised"}, "ts": 1793274524333, "source": "ws"}
+{"type": "node_compromised", "id": "node-sre-workstation", "payload": {"status": "compromised"}, "ts": 1793274524380, "source": "ws"}
+{"type": "edge_active_attack", "id": "edge-09", "payload": {"status": "active_attack"}, "ts": 1793274539551, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-09", "payload": {"status": "active_attack"}, "ts": 1793274540254, "source": "siem"}
+{"type": "cve_found", "id": "node-build-srv", "payload": {"vulnerabilities": ["CVE-2024-23897"], "cvss_score": 9.4}, "ts": 1793274556525, "source": "siem"}
+{"type": "cve_found", "id": "node-build-srv", "payload": {"vulnerabilities": ["CVE-2024-23897"], "cvss_score": 9.4}, "ts": 1793274557453, "source": "siem"}
+{"type": "cve_found", "id": "node-build-srv", "payload": {"vulnerabilities": ["CVE-2024-23897"], "cvss_score": 9.4}, "ts": 1793274558020, "source": "siem"}
+{"type": "cve_found", "id": "node-build-srv", "payload": {"vulnerabilities": ["CVE-2024-23897"], "cvss_score": 9.4}, "ts": 1793274559196, "source": "siem"}
+{"type": "cve_found", "id": "node-build-srv", "payload": {"vulnerabilities": ["CVE-2024-23897"], "cvss_score": 9.4}, "ts": 1793274560685, "source": "siem"}
+{"type": "cve_found", "id": "node-build-srv", "payload": {"vulnerabilities": ["CVE-2024-23897"], "cvss_score": 9.4}, "ts": 1793274561197, "source": "siem"}
+{"type": "node_compromised", "id": "docker-session-redis", "payload": {"status": "compromised"}, "ts": 1793276412707, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-host-docker-session-redis", "payload": {"status": "active_attack"}, "ts": 1793276412707, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-session-redis", "payload": {"status": "active_attack"}, "ts": 1793276412707, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-docker-edge-api-gw-docker-session-redis", "payload": {"status": "active_attack"}, "ts": 1793276412707, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-docker-ci-build-runner-docker-session-redis", "payload": {"status": "active_attack"}, "ts": 1793276412707, "source": "siem"}
+{"type": "node_compromised", "id": "docker-scancodeio-dev-redis-1", "payload": {"status": "compromised"}, "ts": 1793276419730, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-host-docker-scancodeio-dev-redis-1", "payload": {"status": "active_attack"}, "ts": 1793276419730, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-scancodeio-dev-redis-1", "payload": {"status": "active_attack"}, "ts": 1793276419730, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-docker-edge-api-gw-docker-scancodeio-dev-redis-1", "payload": {"status": "active_attack"}, "ts": 1793276419730, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-docker-ci-build-runner-docker-scancodeio-dev-redis-1", "payload": {"status": "active_attack"}, "ts": 1793276419730, "source": "siem"}
+{"type": "node_compromised", "id": "docker-scancodeio-dev-redis-1", "payload": {"status": "compromised"}, "ts": 1793276420823, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-host-docker-scancodeio-dev-redis-1", "payload": {"status": "active_attack"}, "ts": 1793276420823, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-scancodeio-dev-redis-1", "payload": {"status": "active_attack"}, "ts": 1793276420823, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-docker-edge-api-gw-docker-scancodeio-dev-redis-1", "payload": {"status": "active_attack"}, "ts": 1793276420823, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-docker-ci-build-runner-docker-scancodeio-dev-redis-1", "payload": {"status": "active_attack"}, "ts": 1793276420823, "source": "siem"}
+{"type": "node_compromised", "id": "docker-session-redis", "payload": {"status": "compromised"}, "ts": 1793276421592, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-host-docker-session-redis", "payload": {"status": "active_attack"}, "ts": 1793276421592, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-session-redis", "payload": {"status": "active_attack"}, "ts": 1793276421592, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-docker-edge-api-gw-docker-session-redis", "payload": {"status": "active_attack"}, "ts": 1793276421592, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-docker-ci-build-runner-docker-session-redis", "payload": {"status": "active_attack"}, "ts": 1793276421592, "source": "siem"}
+{"type": "node_compromised", "id": "docker-customer-prod-db", "payload": {"status": "compromised"}, "ts": 1793276422440, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-host-docker-customer-prod-db", "payload": {"status": "active_attack"}, "ts": 1793276422440, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-customer-prod-db", "payload": {"status": "active_attack"}, "ts": 1793276422440, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-docker-edge-api-gw-docker-customer-prod-db", "payload": {"status": "active_attack"}, "ts": 1793276422440, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-docker-ci-build-runner-docker-customer-prod-db", "payload": {"status": "active_attack"}, "ts": 1793276422440, "source": "siem"}
+{"type": "node_compromised", "id": "docker-edge-api-gw", "payload": {"status": "compromised"}, "ts": 1793276425345, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-host-docker-edge-api-gw", "payload": {"status": "active_attack"}, "ts": 1793276425345, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-edge-api-gw", "payload": {"status": "active_attack"}, "ts": 1793276425345, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-docker-edge-api-gw-docker-customer-prod-db", "payload": {"status": "active_attack"}, "ts": 1793276425345, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-docker-edge-api-gw-docker-session-redis", "payload": {"status": "active_attack"}, "ts": 1793276425345, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-docker-edge-api-gw-docker-scancodeio-dev-redis-1", "payload": {"status": "active_attack"}, "ts": 1793276425345, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-docker-edge-api-gw-docker-scancodeio-dev-db-1", "payload": {"status": "active_attack"}, "ts": 1793276425345, "source": "siem"}
+{"type": "node_compromised", "id": "docker-edge-api-gw", "payload": {"status": "compromised"}, "ts": 1793276426400, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-host-docker-edge-api-gw", "payload": {"status": "active_attack"}, "ts": 1793276426400, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-edge-api-gw", "payload": {"status": "active_attack"}, "ts": 1793276426400, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-docker-edge-api-gw-docker-customer-prod-db", "payload": {"status": "active_attack"}, "ts": 1793276426400, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-docker-edge-api-gw-docker-session-redis", "payload": {"status": "active_attack"}, "ts": 1793276426400, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-docker-edge-api-gw-docker-scancodeio-dev-redis-1", "payload": {"status": "active_attack"}, "ts": 1793276426400, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-docker-edge-api-gw-docker-scancodeio-dev-db-1", "payload": {"status": "active_attack"}, "ts": 1793276426400, "source": "siem"}
+{"type": "node_compromised", "id": "iam-tms_s", "payload": {"status": "compromised"}, "ts": 1793276486517, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-host-to-iam-tms_s", "payload": {"status": "active_attack"}, "ts": 1793276486517, "source": "siem"}
+{"type": "node_compromised", "id": "iam-tms_s", "payload": {"status": "compromised"}, "ts": 1793276501081, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-host-to-iam-tms_s", "payload": {"status": "active_attack"}, "ts": 1793276501081, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-edge-api-gw", "payload": {"status": "active_attack"}, "ts": 1793276501081, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-ci-build-runner", "payload": {"status": "active_attack"}, "ts": 1793276501081, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-customer-prod-db", "payload": {"status": "active_attack"}, "ts": 1793276501081, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-session-redis", "payload": {"status": "active_attack"}, "ts": 1793276501081, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-scancodeio-dev-redis-1", "payload": {"status": "active_attack"}, "ts": 1793276501081, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-scancodeio-dev-db-1", "payload": {"status": "active_attack"}, "ts": 1793276501081, "source": "siem"}
+{"type": "node_updated", "id": "iam-tms_s", "payload": {"id": "iam-tms_s", "label": "IAM User: tms_s@TMSSATHYA", "type": "IAM", "cvss_score": 8.2, "vulnerabilities": [], "is_crown_jewel": false, "status": "compromised", "refs": {"ip": "127.0.0.1", "hostname": "tms_s", "cloud_id": "uid:tms_s"}, "pos": {"x": 580, "y": 140}}, "ts": 1793276501835, "source": "cloud"}
+{"type": "node_compromised", "id": "host-tmssathya", "payload": {"status": "compromised"}, "ts": 1793276510211, "source": "siem"}
+{"type": "node_compromised", "id": "iam-tms_s", "payload": {"status": "compromised"}, "ts": 1793276531021, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-host-to-iam-tms_s", "payload": {"status": "active_attack"}, "ts": 1793276531021, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-edge-api-gw", "payload": {"status": "active_attack"}, "ts": 1793276531021, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-ci-build-runner", "payload": {"status": "active_attack"}, "ts": 1793276531021, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-customer-prod-db", "payload": {"status": "active_attack"}, "ts": 1793276531021, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-session-redis", "payload": {"status": "active_attack"}, "ts": 1793276531021, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-scancodeio-dev-redis-1", "payload": {"status": "active_attack"}, "ts": 1793276531021, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-scancodeio-dev-db-1", "payload": {"status": "active_attack"}, "ts": 1793276531021, "source": "siem"}
+{"type": "node_updated", "id": "host-tmssathya", "payload": {"id": "host-tmssathya", "label": "TMSSATHYA (Windows 11)", "type": "Workstation", "cvss_score": 8.8, "vulnerabilities": ["CVE-2022-41128", "CVE-2020-0796", "CVE-2024-20960", "CVE-2023-41056"], "is_crown_jewel": false, "status": "compromised", "refs": {"ip": "192.168.1.6", "hostname": "TMSSATHYA", "cloud_id": "ports:135,139,445,3306,6379,8000"}, "pos": {"x": 330, "y": 240}}, "ts": 1793276532364, "source": "cloud"}
+{"type": "node_compromised", "id": "iam-tms_s", "payload": {"status": "compromised"}, "ts": 1793276757063, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-host-to-iam-tms_s", "payload": {"status": "active_attack"}, "ts": 1793276757063, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-edge-api-gw", "payload": {"status": "active_attack"}, "ts": 1793276757063, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-ci-build-runner", "payload": {"status": "active_attack"}, "ts": 1793276757063, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-customer-prod-db", "payload": {"status": "active_attack"}, "ts": 1793276757063, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-session-redis", "payload": {"status": "active_attack"}, "ts": 1793276757063, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-scancodeio-dev-redis-1", "payload": {"status": "active_attack"}, "ts": 1793276757063, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-scancodeio-dev-db-1", "payload": {"status": "active_attack"}, "ts": 1793276757063, "source": "siem"}
+{"type": "node_compromised", "id": "iam-tms_s", "payload": {"status": "compromised"}, "ts": 1793276758060, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-host-to-iam-tms_s", "payload": {"status": "active_attack"}, "ts": 1793276758060, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-edge-api-gw", "payload": {"status": "active_attack"}, "ts": 1793276758060, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-ci-build-runner", "payload": {"status": "active_attack"}, "ts": 1793276758060, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-customer-prod-db", "payload": {"status": "active_attack"}, "ts": 1793276758060, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-session-redis", "payload": {"status": "active_attack"}, "ts": 1793276758060, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-scancodeio-dev-redis-1", "payload": {"status": "active_attack"}, "ts": 1793276758060, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-scancodeio-dev-db-1", "payload": {"status": "active_attack"}, "ts": 1793276758060, "source": "siem"}
+{"type": "node_updated", "id": "host-tmssathya", "payload": {"id": "host-tmssathya", "label": "TMSSATHYA (Windows 11)", "type": "Workstation", "cvss_score": 8.8, "vulnerabilities": ["CVE-2022-41128", "CVE-2020-0796", "CVE-2024-20960", "CVE-2023-41056"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "192.168.1.6", "hostname": "TMSSATHYA", "cloud_id": "ports:135,139,445,3306,6379,8000"}, "pos": {"x": 330, "y": 240}}, "ts": 1793276759589, "source": "cloud"}
+{"type": "node_compromised", "id": "host-tmssathya", "payload": {"status": "compromised"}, "ts": 1793276760835, "source": "siem"}
+{"type": "node_updated", "id": "host-tmssathya", "payload": {"id": "host-tmssathya", "label": "TMSSATHYA (Windows 11)", "type": "Workstation", "cvss_score": 8.8, "vulnerabilities": ["CVE-2022-41128", "CVE-2020-0796", "CVE-2024-20960", "CVE-2023-41056"], "is_crown_jewel": false, "status": "compromised", "refs": {"ip": "192.168.1.6", "hostname": "TMSSATHYA", "cloud_id": "ports:135,139,445,3306,6379,8000"}, "pos": {"x": 330, "y": 240}}, "ts": 1793276773424, "source": "cloud"}
+{"type": "node_compromised", "id": "iam-tms_s", "payload": {"status": "compromised"}, "ts": 1793277095593, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-host-to-iam-tms_s", "payload": {"status": "active_attack"}, "ts": 1793277095593, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-edge-api-gw", "payload": {"status": "active_attack"}, "ts": 1793277095593, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-ci-build-runner", "payload": {"status": "active_attack"}, "ts": 1793277095593, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-customer-prod-db", "payload": {"status": "active_attack"}, "ts": 1793277095593, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-session-redis", "payload": {"status": "active_attack"}, "ts": 1793277095593, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-scancodeio-dev-redis-1", "payload": {"status": "active_attack"}, "ts": 1793277095593, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-scancodeio-dev-db-1", "payload": {"status": "active_attack"}, "ts": 1793277095593, "source": "siem"}
+{"type": "node_compromised", "id": "host-tmssathya", "payload": {"status": "compromised"}, "ts": 1793277107187, "source": "siem"}
+{"type": "node_updated", "id": "host-tmssathya", "payload": {"id": "host-tmssathya", "label": "TMSSATHYA (Windows 11)", "type": "Workstation", "cvss_score": 8.8, "vulnerabilities": ["CVE-2022-41128", "CVE-2020-0796", "CVE-2024-20960", "CVE-2023-41056"], "is_crown_jewel": false, "status": "compromised", "refs": {"ip": "192.168.1.6", "hostname": "TMSSATHYA", "cloud_id": "ports:135,139,445,3306,6379,8000"}, "pos": {"x": 330, "y": 240}}, "ts": 1793277114108, "source": "cloud"}
+{"type": "node_updated", "id": "iam-tms_s", "payload": {"id": "iam-tms_s", "label": "IAM User: tms_s@TMSSATHYA", "type": "IAM", "cvss_score": 8.2, "vulnerabilities": [], "is_crown_jewel": false, "status": "compromised", "refs": {"ip": "127.0.0.1", "hostname": "tms_s", "cloud_id": "uid:tms_s"}, "pos": {"x": 580, "y": 140}}, "ts": 1793277114108, "source": "cloud"}
+{"type": "node_updated", "id": "docker-customer-prod-db", "payload": {"id": "docker-customer-prod-db", "label": "Docker: customer-prod-db (postgres:16-alpine)", "type": "Database", "cvss_score": 9.6, "vulnerabilities": ["CVE-2024-0985", "CVE-2023-5869"], "is_crown_jewel": true, "status": "compromised", "refs": {"ip": "172.19.0.5", "hostname": "customer-prod-db", "cloud_id": "5aa097b42277"}, "pos": {"x": 880, "y": 310}}, "ts": 1793277114108, "source": "cloud"}
+{"type": "node_updated", "id": "host-tmssathya", "payload": {"id": "host-tmssathya", "label": "TMSSATHYA (Windows 11)", "type": "Workstation", "cvss_score": 8.8, "vulnerabilities": ["CVE-2022-41128", "CVE-2020-0796", "CVE-2024-20960", "CVE-2023-41056"], "is_crown_jewel": false, "status": "compromised", "refs": {"ip": "192.168.1.6", "hostname": "TMSSATHYA", "cloud_id": "ports:135,139,445,3306,6379,8000"}, "pos": {"x": 330, "y": 240}}, "ts": 1793277232807, "source": "cloud"}
+{"type": "node_updated", "id": "svc-port-135", "payload": {"id": "svc-port-135", "label": "Local HTTPS Service (:135)", "type": "Server", "cvss_score": 7.2, "vulnerabilities": ["CVE-2023-44487"], "is_crown_jewel": false, "status": "compromised", "refs": {"ip": "192.168.1.6:135", "hostname": "TMSSATHYA:135", "cloud_id": "port-135"}, "pos": {"x": 580, "y": 260}}, "ts": 1793277232807, "source": "cloud"}
+{"type": "node_updated", "id": "docker-customer-prod-db", "payload": {"id": "docker-customer-prod-db", "label": "Docker: customer-prod-db (postgres:16-alpine)", "type": "Database", "cvss_score": 9.6, "vulnerabilities": ["CVE-2024-0985", "CVE-2023-5869"], "is_crown_jewel": true, "status": "compromised", "refs": {"ip": "172.19.0.5", "hostname": "customer-prod-db", "cloud_id": "5aa097b42277"}, "pos": {"x": 880, "y": 310}}, "ts": 1793277232807, "source": "cloud"}
+{"type": "node_added", "id": "host-tmssathya", "payload": {"id": "host-tmssathya", "label": "TMSSATHYA (Windows 11)", "type": "Workstation", "cvss_score": 8.8, "vulnerabilities": ["CVE-2022-41128", "CVE-2020-0796", "CVE-2024-20960", "CVE-2023-41056"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "192.168.1.6", "hostname": "TMSSATHYA", "cloud_id": "ports:135,139,445,3306,6379,8000"}, "pos": {"x": 330, "y": 240}}, "ts": 1793278612096, "source": "cloud"}
+{"type": "node_added", "id": "lan-192-168-1-1", "payload": {"id": "lan-192-168-1-1", "label": "LAN Gateway (192.168.1.1)", "type": "IoT", "cvss_score": 7.8, "vulnerabilities": ["CVE-2023-20198"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "192.168.1.1", "hostname": "LAN Gateway (192.168.1.1)", "cloud_id": "44-fb-5a-9e-02-b6"}, "pos": {"x": 90, "y": 70}}, "ts": 1793278612096, "source": "cloud"}
+{"type": "node_added", "id": "iam-tms_s", "payload": {"id": "iam-tms_s", "label": "IAM User: tms_s@TMSSATHYA", "type": "IAM", "cvss_score": 8.2, "vulnerabilities": [], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "127.0.0.1", "hostname": "tms_s", "cloud_id": "uid:tms_s"}, "pos": {"x": 580, "y": 140}}, "ts": 1793278612096, "source": "cloud"}
+{"type": "node_added", "id": "svc-port-135", "payload": {"id": "svc-port-135", "label": "Local HTTPS Service (:135)", "type": "Server", "cvss_score": 7.2, "vulnerabilities": ["CVE-2023-44487"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "192.168.1.6:135", "hostname": "TMSSATHYA:135", "cloud_id": "port-135"}, "pos": {"x": 580, "y": 260}}, "ts": 1793278612096, "source": "cloud"}
+{"type": "node_added", "id": "svc-port-139", "payload": {"id": "svc-port-139", "label": "Local SMB Service (:139)", "type": "Server", "cvss_score": 7.8, "vulnerabilities": ["CVE-2022-41128"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "192.168.1.6:139", "hostname": "TMSSATHYA:139", "cloud_id": "port-139"}, "pos": {"x": 580, "y": 340}}, "ts": 1793278612096, "source": "cloud"}
+{"type": "node_added", "id": "svc-port-445", "payload": {"id": "svc-port-445", "label": "Local SMB Service (:445)", "type": "Server", "cvss_score": 8.8, "vulnerabilities": ["CVE-2020-0796", "CVE-2022-41128"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "192.168.1.6:445", "hostname": "TMSSATHYA:445", "cloud_id": "port-445"}, "pos": {"x": 580, "y": 420}}, "ts": 1793278612096, "source": "cloud"}
+{"type": "node_added", "id": "svc-port-3306", "payload": {"id": "svc-port-3306", "label": "Local HTTPS Service (:3306)", "type": "Database", "cvss_score": 7.2, "vulnerabilities": ["CVE-2024-20960"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "192.168.1.6:3306", "hostname": "TMSSATHYA:3306", "cloud_id": "port-3306"}, "pos": {"x": 580, "y": 500}}, "ts": 1793278612096, "source": "cloud"}
+{"type": "node_added", "id": "docker-edge-api-gw", "payload": {"id": "docker-edge-api-gw", "label": "Docker: edge-api-gw (nginx:alpine)", "type": "Server", "cvss_score": 7.5, "vulnerabilities": ["CVE-2023-44487", "CVE-2022-41741"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "172.19.0.4", "hostname": "edge-api-gw", "cloud_id": "b81d68f33961"}, "pos": {"x": 620, "y": 100}}, "ts": 1793278612096, "source": "cloud"}
+{"type": "node_added", "id": "docker-ci-build-runner", "payload": {"id": "docker-ci-build-runner", "label": "Docker: ci-build-runner (httpd:alpine)", "type": "Server", "cvss_score": 8.2, "vulnerabilities": ["CVE-2024-27316", "CVE-2023-25690"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "172.19.0.2", "hostname": "ci-build-runner", "cloud_id": "606b7aa8af22"}, "pos": {"x": 620, "y": 205}}, "ts": 1793278612096, "source": "cloud"}
+{"type": "node_added", "id": "docker-customer-prod-db", "payload": {"id": "docker-customer-prod-db", "label": "Docker: customer-prod-db (postgres:16-alpine)", "type": "Database", "cvss_score": 9.6, "vulnerabilities": ["CVE-2024-0985", "CVE-2023-5869"], "is_crown_jewel": true, "status": "secure", "refs": {"ip": "172.19.0.5", "hostname": "customer-prod-db", "cloud_id": "5aa097b42277"}, "pos": {"x": 880, "y": 310}}, "ts": 1793278612096, "source": "cloud"}
+{"type": "node_added", "id": "docker-session-redis", "payload": {"id": "docker-session-redis", "label": "Docker: session-redis (redis:alpine)", "type": "Database", "cvss_score": 8.5, "vulnerabilities": ["CVE-2023-41056", "CVE-2022-0543"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "172.19.0.3", "hostname": "session-redis", "cloud_id": "86ae67db89eb"}, "pos": {"x": 880, "y": 415}}, "ts": 1793278612096, "source": "cloud"}
+{"type": "node_added", "id": "docker-scancodeio-dev-redis-1", "payload": {"id": "docker-scancodeio-dev-redis-1", "label": "Docker: scancodeio-dev-redis-1 (redis:8.10.2-alpine)", "type": "Database", "cvss_score": 8.5, "vulnerabilities": ["CVE-2023-41056", "CVE-2022-0543"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "172.18.0.2", "hostname": "scancodeio-dev-redis-1", "cloud_id": "e3b7307c194e"}, "pos": {"x": 880, "y": 520}}, "ts": 1793278612096, "source": "cloud"}
+{"type": "node_added", "id": "docker-scancodeio-dev-db-1", "payload": {"id": "docker-scancodeio-dev-db-1", "label": "Docker: scancodeio-dev-db-1 (postgres:17.11)", "type": "Database", "cvss_score": 8.8, "vulnerabilities": ["CVE-2024-0985", "CVE-2023-5869"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "172.18.0.3", "hostname": "scancodeio-dev-db-1", "cloud_id": "10d0f1067180"}, "pos": {"x": 880, "y": 625}}, "ts": 1793278612096, "source": "cloud"}
+{"type": "node_removed", "id": "node-printer", "ts": 1793278612096, "source": "cloud"}
+{"type": "node_removed", "id": "node-thermostat", "ts": 1793278612096, "source": "cloud"}
+{"type": "node_removed", "id": "node-dev-laptop", "ts": 1793278612096, "source": "cloud"}
+{"type": "node_removed", "id": "node-admin-workstation", "ts": 1793278612096, "source": "cloud"}
+{"type": "node_removed", "id": "node-finance-laptop", "ts": 1793278612096, "source": "cloud"}
+{"type": "node_removed", "id": "node-dmz-proxy", "ts": 1793278612096, "source": "cloud"}
+{"type": "node_removed", "id": "node-build-server", "ts": 1793278612096, "source": "cloud"}
+{"type": "node_removed", "id": "node-auth-server", "ts": 1793278612096, "source": "cloud"}
+{"type": "node_removed", "id": "node-storage-node", "ts": 1793278612096, "source": "cloud"}
+{"type": "node_removed", "id": "node-api-gateway", "ts": 1793278612096, "source": "cloud"}
+{"type": "node_removed", "id": "node-k8s-worker", "ts": 1793278612096, "source": "cloud"}
+{"type": "node_removed", "id": "node-iam-cicd", "ts": 1793278612096, "source": "cloud"}
+{"type": "node_removed", "id": "node-iam-admin", "ts": 1793278612096, "source": "cloud"}
+{"type": "node_removed", "id": "node-staging-db", "ts": 1793278612096, "source": "cloud"}
+{"type": "node_removed", "id": "node-prod-crown-jewel", "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_added", "id": "edge-lan-192-168-1-1-to-host", "payload": {"id": "edge-lan-192-168-1-1-to-host", "source": "lan-192-168-1-1", "target": "host-tmssathya", "protocol": "SMB", "exploit_time_sec": 10, "status": "open"}, "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_added", "id": "edge-host-to-iam-tms_s", "payload": {"id": "edge-host-to-iam-tms_s", "source": "host-tmssathya", "target": "iam-tms_s", "protocol": "IAM_Trust", "exploit_time_sec": 6, "status": "open"}, "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_added", "id": "edge-host-to-svc-port-135", "payload": {"id": "edge-host-to-svc-port-135", "source": "host-tmssathya", "target": "svc-port-135", "protocol": "HTTPS", "exploit_time_sec": 8, "status": "open"}, "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_added", "id": "edge-host-to-svc-port-139", "payload": {"id": "edge-host-to-svc-port-139", "source": "host-tmssathya", "target": "svc-port-139", "protocol": "SMB", "exploit_time_sec": 8, "status": "open"}, "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_added", "id": "edge-host-to-svc-port-445", "payload": {"id": "edge-host-to-svc-port-445", "source": "host-tmssathya", "target": "svc-port-445", "protocol": "SMB", "exploit_time_sec": 8, "status": "open"}, "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_added", "id": "edge-host-to-svc-port-3306", "payload": {"id": "edge-host-to-svc-port-3306", "source": "host-tmssathya", "target": "svc-port-3306", "protocol": "HTTPS", "exploit_time_sec": 8, "status": "open"}, "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_added", "id": "edge-host-docker-edge-api-gw", "payload": {"id": "edge-host-docker-edge-api-gw", "source": "host-tmssathya", "target": "docker-edge-api-gw", "protocol": "HTTPS", "exploit_time_sec": 9, "status": "open"}, "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_added", "id": "edge-iam-docker-edge-api-gw", "payload": {"id": "edge-iam-docker-edge-api-gw", "source": "iam-tms_s", "target": "docker-edge-api-gw", "protocol": "IAM_Trust", "exploit_time_sec": 7, "status": "open"}, "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_added", "id": "edge-host-docker-ci-build-runner", "payload": {"id": "edge-host-docker-ci-build-runner", "source": "host-tmssathya", "target": "docker-ci-build-runner", "protocol": "HTTPS", "exploit_time_sec": 9, "status": "open"}, "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_added", "id": "edge-iam-docker-ci-build-runner", "payload": {"id": "edge-iam-docker-ci-build-runner", "source": "iam-tms_s", "target": "docker-ci-build-runner", "protocol": "IAM_Trust", "exploit_time_sec": 7, "status": "open"}, "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_added", "id": "edge-host-docker-customer-prod-db", "payload": {"id": "edge-host-docker-customer-prod-db", "source": "host-tmssathya", "target": "docker-customer-prod-db", "protocol": "HTTPS", "exploit_time_sec": 9, "status": "open"}, "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_added", "id": "edge-iam-docker-customer-prod-db", "payload": {"id": "edge-iam-docker-customer-prod-db", "source": "iam-tms_s", "target": "docker-customer-prod-db", "protocol": "IAM_Trust", "exploit_time_sec": 7, "status": "open"}, "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_added", "id": "edge-host-docker-session-redis", "payload": {"id": "edge-host-docker-session-redis", "source": "host-tmssathya", "target": "docker-session-redis", "protocol": "HTTPS", "exploit_time_sec": 9, "status": "open"}, "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_added", "id": "edge-iam-docker-session-redis", "payload": {"id": "edge-iam-docker-session-redis", "source": "iam-tms_s", "target": "docker-session-redis", "protocol": "IAM_Trust", "exploit_time_sec": 7, "status": "open"}, "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_added", "id": "edge-host-docker-scancodeio-dev-redis-1", "payload": {"id": "edge-host-docker-scancodeio-dev-redis-1", "source": "host-tmssathya", "target": "docker-scancodeio-dev-redis-1", "protocol": "HTTPS", "exploit_time_sec": 9, "status": "open"}, "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_added", "id": "edge-iam-docker-scancodeio-dev-redis-1", "payload": {"id": "edge-iam-docker-scancodeio-dev-redis-1", "source": "iam-tms_s", "target": "docker-scancodeio-dev-redis-1", "protocol": "IAM_Trust", "exploit_time_sec": 7, "status": "open"}, "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_added", "id": "edge-host-docker-scancodeio-dev-db-1", "payload": {"id": "edge-host-docker-scancodeio-dev-db-1", "source": "host-tmssathya", "target": "docker-scancodeio-dev-db-1", "protocol": "HTTPS", "exploit_time_sec": 9, "status": "open"}, "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_added", "id": "edge-iam-docker-scancodeio-dev-db-1", "payload": {"id": "edge-iam-docker-scancodeio-dev-db-1", "source": "iam-tms_s", "target": "docker-scancodeio-dev-db-1", "protocol": "IAM_Trust", "exploit_time_sec": 7, "status": "open"}, "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_added", "id": "edge-docker-edge-api-gw-docker-customer-prod-db", "payload": {"id": "edge-docker-edge-api-gw-docker-customer-prod-db", "source": "docker-edge-api-gw", "target": "docker-customer-prod-db", "protocol": "HTTPS", "exploit_time_sec": 10, "status": "open"}, "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_added", "id": "edge-docker-edge-api-gw-docker-session-redis", "payload": {"id": "edge-docker-edge-api-gw-docker-session-redis", "source": "docker-edge-api-gw", "target": "docker-session-redis", "protocol": "HTTPS", "exploit_time_sec": 10, "status": "open"}, "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_added", "id": "edge-docker-edge-api-gw-docker-scancodeio-dev-redis-1", "payload": {"id": "edge-docker-edge-api-gw-docker-scancodeio-dev-redis-1", "source": "docker-edge-api-gw", "target": "docker-scancodeio-dev-redis-1", "protocol": "HTTPS", "exploit_time_sec": 10, "status": "open"}, "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_added", "id": "edge-docker-edge-api-gw-docker-scancodeio-dev-db-1", "payload": {"id": "edge-docker-edge-api-gw-docker-scancodeio-dev-db-1", "source": "docker-edge-api-gw", "target": "docker-scancodeio-dev-db-1", "protocol": "HTTPS", "exploit_time_sec": 10, "status": "open"}, "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_added", "id": "edge-docker-ci-build-runner-docker-customer-prod-db", "payload": {"id": "edge-docker-ci-build-runner-docker-customer-prod-db", "source": "docker-ci-build-runner", "target": "docker-customer-prod-db", "protocol": "HTTPS", "exploit_time_sec": 10, "status": "open"}, "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_added", "id": "edge-docker-ci-build-runner-docker-session-redis", "payload": {"id": "edge-docker-ci-build-runner-docker-session-redis", "source": "docker-ci-build-runner", "target": "docker-session-redis", "protocol": "HTTPS", "exploit_time_sec": 10, "status": "open"}, "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_added", "id": "edge-docker-ci-build-runner-docker-scancodeio-dev-redis-1", "payload": {"id": "edge-docker-ci-build-runner-docker-scancodeio-dev-redis-1", "source": "docker-ci-build-runner", "target": "docker-scancodeio-dev-redis-1", "protocol": "HTTPS", "exploit_time_sec": 10, "status": "open"}, "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_added", "id": "edge-docker-ci-build-runner-docker-scancodeio-dev-db-1", "payload": {"id": "edge-docker-ci-build-runner-docker-scancodeio-dev-db-1", "source": "docker-ci-build-runner", "target": "docker-scancodeio-dev-db-1", "protocol": "HTTPS", "exploit_time_sec": 10, "status": "open"}, "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_removed", "id": "e-printer-dev", "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_removed", "id": "e-printer-admin", "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_removed", "id": "e-printer-finance", "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_removed", "id": "e-thermo-dev", "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_removed", "id": "e-dev-dmz", "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_removed", "id": "e-dev-build", "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_removed", "id": "e-dev-auth", "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_removed", "id": "e-admin-auth", "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_removed", "id": "e-admin-iam-admin", "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_removed", "id": "e-finance-storage", "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_removed", "id": "e-dmz-api", "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_removed", "id": "e-build-api", "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_removed", "id": "e-build-k8s", "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_removed", "id": "e-build-iam-cicd", "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_removed", "id": "e-auth-storage", "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_removed", "id": "e-auth-iam-admin", "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_removed", "id": "e-storage-staging", "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_removed", "id": "e-api-k8s", "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_removed", "id": "e-api-staging", "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_removed", "id": "e-api-crown", "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_removed", "id": "e-k8s-staging", "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_removed", "id": "e-k8s-iam-admin", "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_removed", "id": "e-k8s-crown", "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_removed", "id": "e-iam-cicd-iam-admin", "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_removed", "id": "e-iam-cicd-staging", "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_removed", "id": "e-iam-admin-crown", "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_removed", "id": "e-staging-crown", "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_removed", "id": "e-dev-storage", "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_removed", "id": "e-thermo-admin", "ts": 1793278612096, "source": "cloud"}
+{"type": "edge_removed", "id": "e-dmz-build", "ts": 1793278612096, "source": "cloud"}
+{"type": "node_compromised", "id": "iam-tms_s", "payload": {"status": "compromised"}, "ts": 1793278901943, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-host-to-iam-tms_s", "payload": {"status": "active_attack"}, "ts": 1793278901943, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-edge-api-gw", "payload": {"status": "active_attack"}, "ts": 1793278901943, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-ci-build-runner", "payload": {"status": "active_attack"}, "ts": 1793278901943, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-customer-prod-db", "payload": {"status": "active_attack"}, "ts": 1793278901943, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-session-redis", "payload": {"status": "active_attack"}, "ts": 1793278901943, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-scancodeio-dev-redis-1", "payload": {"status": "active_attack"}, "ts": 1793278901943, "source": "siem"}
+{"type": "edge_active_attack", "id": "edge-iam-docker-scancodeio-dev-db-1", "payload": {"status": "active_attack"}, "ts": 1793278901943, "source": "siem"}
+{"type": "node_added", "id": "host-tmssathya", "payload": {"id": "host-tmssathya", "label": "TMSSATHYA (Windows 11)", "type": "Workstation", "cvss_score": 8.8, "vulnerabilities": ["CVE-2022-41128", "CVE-2020-0796", "CVE-2024-20960", "CVE-2023-41056"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "192.168.1.6", "hostname": "TMSSATHYA", "cloud_id": "ports:135,139,445,3306,6379,8000"}, "pos": {"x": 330, "y": 240}}, "ts": 1793283048306, "source": "cloud"}
+{"type": "node_added", "id": "lan-192-168-1-1", "payload": {"id": "lan-192-168-1-1", "label": "LAN Gateway (192.168.1.1)", "type": "IoT", "cvss_score": 7.8, "vulnerabilities": ["CVE-2023-20198"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "192.168.1.1", "hostname": "LAN Gateway (192.168.1.1)", "cloud_id": "44-fb-5a-9e-02-b6"}, "pos": {"x": 90, "y": 70}}, "ts": 1793283048306, "source": "cloud"}
+{"type": "node_added", "id": "lan-192-168-1-5", "payload": {"id": "lan-192-168-1-5", "label": "LAN Device 192.168.1.5 (bc-03-58)", "type": "Workstation", "cvss_score": 6.8, "vulnerabilities": ["CVE-2020-0796"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "192.168.1.5", "hostname": "LAN Device 192.168.1.5 (bc-03-58)", "cloud_id": "bc-03-58-5d-fc-5f"}, "pos": {"x": 90, "y": 155}}, "ts": 1793283048306, "source": "cloud"}
+{"type": "node_added", "id": "iam-tms_s", "payload": {"id": "iam-tms_s", "label": "IAM User: tms_s@TMSSATHYA", "type": "IAM", "cvss_score": 8.2, "vulnerabilities": [], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "127.0.0.1", "hostname": "tms_s", "cloud_id": "uid:tms_s"}, "pos": {"x": 580, "y": 140}}, "ts": 1793283048306, "source": "cloud"}
+{"type": "node_added", "id": "svc-port-135", "payload": {"id": "svc-port-135", "label": "Local HTTPS Service (:135)", "type": "Server", "cvss_score": 7.2, "vulnerabilities": ["CVE-2023-44487"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "192.168.1.6:135", "hostname": "TMSSATHYA:135", "cloud_id": "port-135"}, "pos": {"x": 580, "y": 260}}, "ts": 1793283048306, "source": "cloud"}
+{"type": "node_added", "id": "svc-port-139", "payload": {"id": "svc-port-139", "label": "Local SMB Service (:139)", "type": "Server", "cvss_score": 7.8, "vulnerabilities": ["CVE-2022-41128"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "192.168.1.6:139", "hostname": "TMSSATHYA:139", "cloud_id": "port-139"}, "pos": {"x": 580, "y": 340}}, "ts": 1793283048306, "source": "cloud"}
+{"type": "node_added", "id": "svc-port-445", "payload": {"id": "svc-port-445", "label": "Local SMB Service (:445)", "type": "Server", "cvss_score": 8.8, "vulnerabilities": ["CVE-2020-0796", "CVE-2022-41128"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "192.168.1.6:445", "hostname": "TMSSATHYA:445", "cloud_id": "port-445"}, "pos": {"x": 580, "y": 420}}, "ts": 1793283048306, "source": "cloud"}
+{"type": "node_added", "id": "svc-port-3306", "payload": {"id": "svc-port-3306", "label": "Local HTTPS Service (:3306)", "type": "Database", "cvss_score": 7.2, "vulnerabilities": ["CVE-2024-20960"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "192.168.1.6:3306", "hostname": "TMSSATHYA:3306", "cloud_id": "port-3306"}, "pos": {"x": 580, "y": 500}}, "ts": 1793283048306, "source": "cloud"}
+{"type": "node_added", "id": "docker-edge-api-gw", "payload": {"id": "docker-edge-api-gw", "label": "Docker: edge-api-gw (nginx:alpine)", "type": "Server", "cvss_score": 7.5, "vulnerabilities": ["CVE-2023-44487", "CVE-2022-41741"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "172.19.0.4", "hostname": "edge-api-gw", "cloud_id": "b81d68f33961"}, "pos": {"x": 620, "y": 100}}, "ts": 1793283048306, "source": "cloud"}
+{"type": "node_added", "id": "docker-ci-build-runner", "payload": {"id": "docker-ci-build-runner", "label": "Docker: ci-build-runner (httpd:alpine)", "type": "Server", "cvss_score": 8.2, "vulnerabilities": ["CVE-2024-27316", "CVE-2023-25690"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "172.19.0.2", "hostname": "ci-build-runner", "cloud_id": "606b7aa8af22"}, "pos": {"x": 620, "y": 205}}, "ts": 1793283048306, "source": "cloud"}
+{"type": "node_added", "id": "docker-customer-prod-db", "payload": {"id": "docker-customer-prod-db", "label": "Docker: customer-prod-db (postgres:16-alpine)", "type": "Database", "cvss_score": 9.6, "vulnerabilities": ["CVE-2024-0985", "CVE-2023-5869"], "is_crown_jewel": true, "status": "secure", "refs": {"ip": "172.19.0.5", "hostname": "customer-prod-db", "cloud_id": "5aa097b42277"}, "pos": {"x": 880, "y": 310}}, "ts": 1793283048306, "source": "cloud"}
+{"type": "node_added", "id": "docker-session-redis", "payload": {"id": "docker-session-redis", "label": "Docker: session-redis (redis:alpine)", "type": "Database", "cvss_score": 8.5, "vulnerabilities": ["CVE-2023-41056", "CVE-2022-0543"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "172.19.0.3", "hostname": "session-redis", "cloud_id": "86ae67db89eb"}, "pos": {"x": 880, "y": 415}}, "ts": 1793283048306, "source": "cloud"}
+{"type": "node_added", "id": "docker-scancodeio-dev-redis-1", "payload": {"id": "docker-scancodeio-dev-redis-1", "label": "Docker: scancodeio-dev-redis-1 (redis:8.10.2-alpine)", "type": "Database", "cvss_score": 8.5, "vulnerabilities": ["CVE-2023-41056", "CVE-2022-0543"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "172.18.0.2", "hostname": "scancodeio-dev-redis-1", "cloud_id": "e3b7307c194e"}, "pos": {"x": 880, "y": 520}}, "ts": 1793283048306, "source": "cloud"}
+{"type": "node_added", "id": "docker-scancodeio-dev-db-1", "payload": {"id": "docker-scancodeio-dev-db-1", "label": "Docker: scancodeio-dev-db-1 (postgres:17.11)", "type": "Database", "cvss_score": 8.8, "vulnerabilities": ["CVE-2024-0985", "CVE-2023-5869"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "172.18.0.3", "hostname": "scancodeio-dev-db-1", "cloud_id": "10d0f1067180"}, "pos": {"x": 880, "y": 625}}, "ts": 1793283048306, "source": "cloud"}
+{"type": "node_removed", "id": "node-printer", "ts": 1793283048306, "source": "cloud"}
+{"type": "node_removed", "id": "node-thermostat", "ts": 1793283048306, "source": "cloud"}
+{"type": "node_removed", "id": "node-dev-laptop", "ts": 1793283048306, "source": "cloud"}
+{"type": "node_removed", "id": "node-admin-workstation", "ts": 1793283048306, "source": "cloud"}
+{"type": "node_removed", "id": "node-finance-laptop", "ts": 1793283048306, "source": "cloud"}
+{"type": "node_removed", "id": "node-dmz-proxy", "ts": 1793283048306, "source": "cloud"}
+{"type": "node_removed", "id": "node-build-server", "ts": 1793283048306, "source": "cloud"}
+{"type": "node_removed", "id": "node-auth-server", "ts": 1793283048306, "source": "cloud"}
+{"type": "node_removed", "id": "node-storage-node", "ts": 1793283048306, "source": "cloud"}
+{"type": "node_removed", "id": "node-api-gateway", "ts": 1793283048306, "source": "cloud"}
+{"type": "node_removed", "id": "node-k8s-worker", "ts": 1793283048306, "source": "cloud"}
+{"type": "node_removed", "id": "node-iam-cicd", "ts": 1793283048306, "source": "cloud"}
+{"type": "node_removed", "id": "node-iam-admin", "ts": 1793283048306, "source": "cloud"}
+{"type": "node_removed", "id": "node-staging-db", "ts": 1793283048306, "source": "cloud"}
+{"type": "node_removed", "id": "node-prod-crown-jewel", "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_added", "id": "edge-lan-192-168-1-1-to-host", "payload": {"id": "edge-lan-192-168-1-1-to-host", "source": "lan-192-168-1-1", "target": "host-tmssathya", "protocol": "SMB", "exploit_time_sec": 10, "status": "open"}, "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_added", "id": "edge-lan-192-168-1-5-to-host", "payload": {"id": "edge-lan-192-168-1-5-to-host", "source": "lan-192-168-1-5", "target": "host-tmssathya", "protocol": "SMB", "exploit_time_sec": 10, "status": "open"}, "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_added", "id": "edge-host-to-iam-tms_s", "payload": {"id": "edge-host-to-iam-tms_s", "source": "host-tmssathya", "target": "iam-tms_s", "protocol": "IAM_Trust", "exploit_time_sec": 6, "status": "open"}, "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_added", "id": "edge-host-to-svc-port-135", "payload": {"id": "edge-host-to-svc-port-135", "source": "host-tmssathya", "target": "svc-port-135", "protocol": "HTTPS", "exploit_time_sec": 8, "status": "open"}, "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_added", "id": "edge-host-to-svc-port-139", "payload": {"id": "edge-host-to-svc-port-139", "source": "host-tmssathya", "target": "svc-port-139", "protocol": "SMB", "exploit_time_sec": 8, "status": "open"}, "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_added", "id": "edge-host-to-svc-port-445", "payload": {"id": "edge-host-to-svc-port-445", "source": "host-tmssathya", "target": "svc-port-445", "protocol": "SMB", "exploit_time_sec": 8, "status": "open"}, "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_added", "id": "edge-host-to-svc-port-3306", "payload": {"id": "edge-host-to-svc-port-3306", "source": "host-tmssathya", "target": "svc-port-3306", "protocol": "HTTPS", "exploit_time_sec": 8, "status": "open"}, "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_added", "id": "edge-host-docker-edge-api-gw", "payload": {"id": "edge-host-docker-edge-api-gw", "source": "host-tmssathya", "target": "docker-edge-api-gw", "protocol": "HTTPS", "exploit_time_sec": 9, "status": "open"}, "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_added", "id": "edge-iam-docker-edge-api-gw", "payload": {"id": "edge-iam-docker-edge-api-gw", "source": "iam-tms_s", "target": "docker-edge-api-gw", "protocol": "IAM_Trust", "exploit_time_sec": 7, "status": "open"}, "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_added", "id": "edge-host-docker-ci-build-runner", "payload": {"id": "edge-host-docker-ci-build-runner", "source": "host-tmssathya", "target": "docker-ci-build-runner", "protocol": "HTTPS", "exploit_time_sec": 9, "status": "open"}, "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_added", "id": "edge-iam-docker-ci-build-runner", "payload": {"id": "edge-iam-docker-ci-build-runner", "source": "iam-tms_s", "target": "docker-ci-build-runner", "protocol": "IAM_Trust", "exploit_time_sec": 7, "status": "open"}, "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_added", "id": "edge-host-docker-customer-prod-db", "payload": {"id": "edge-host-docker-customer-prod-db", "source": "host-tmssathya", "target": "docker-customer-prod-db", "protocol": "HTTPS", "exploit_time_sec": 9, "status": "open"}, "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_added", "id": "edge-iam-docker-customer-prod-db", "payload": {"id": "edge-iam-docker-customer-prod-db", "source": "iam-tms_s", "target": "docker-customer-prod-db", "protocol": "IAM_Trust", "exploit_time_sec": 7, "status": "open"}, "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_added", "id": "edge-host-docker-session-redis", "payload": {"id": "edge-host-docker-session-redis", "source": "host-tmssathya", "target": "docker-session-redis", "protocol": "HTTPS", "exploit_time_sec": 9, "status": "open"}, "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_added", "id": "edge-iam-docker-session-redis", "payload": {"id": "edge-iam-docker-session-redis", "source": "iam-tms_s", "target": "docker-session-redis", "protocol": "IAM_Trust", "exploit_time_sec": 7, "status": "open"}, "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_added", "id": "edge-host-docker-scancodeio-dev-redis-1", "payload": {"id": "edge-host-docker-scancodeio-dev-redis-1", "source": "host-tmssathya", "target": "docker-scancodeio-dev-redis-1", "protocol": "HTTPS", "exploit_time_sec": 9, "status": "open"}, "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_added", "id": "edge-iam-docker-scancodeio-dev-redis-1", "payload": {"id": "edge-iam-docker-scancodeio-dev-redis-1", "source": "iam-tms_s", "target": "docker-scancodeio-dev-redis-1", "protocol": "IAM_Trust", "exploit_time_sec": 7, "status": "open"}, "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_added", "id": "edge-host-docker-scancodeio-dev-db-1", "payload": {"id": "edge-host-docker-scancodeio-dev-db-1", "source": "host-tmssathya", "target": "docker-scancodeio-dev-db-1", "protocol": "HTTPS", "exploit_time_sec": 9, "status": "open"}, "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_added", "id": "edge-iam-docker-scancodeio-dev-db-1", "payload": {"id": "edge-iam-docker-scancodeio-dev-db-1", "source": "iam-tms_s", "target": "docker-scancodeio-dev-db-1", "protocol": "IAM_Trust", "exploit_time_sec": 7, "status": "open"}, "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_added", "id": "edge-docker-edge-api-gw-docker-customer-prod-db", "payload": {"id": "edge-docker-edge-api-gw-docker-customer-prod-db", "source": "docker-edge-api-gw", "target": "docker-customer-prod-db", "protocol": "HTTPS", "exploit_time_sec": 10, "status": "open"}, "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_added", "id": "edge-docker-edge-api-gw-docker-session-redis", "payload": {"id": "edge-docker-edge-api-gw-docker-session-redis", "source": "docker-edge-api-gw", "target": "docker-session-redis", "protocol": "HTTPS", "exploit_time_sec": 10, "status": "open"}, "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_added", "id": "edge-docker-edge-api-gw-docker-scancodeio-dev-redis-1", "payload": {"id": "edge-docker-edge-api-gw-docker-scancodeio-dev-redis-1", "source": "docker-edge-api-gw", "target": "docker-scancodeio-dev-redis-1", "protocol": "HTTPS", "exploit_time_sec": 10, "status": "open"}, "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_added", "id": "edge-docker-edge-api-gw-docker-scancodeio-dev-db-1", "payload": {"id": "edge-docker-edge-api-gw-docker-scancodeio-dev-db-1", "source": "docker-edge-api-gw", "target": "docker-scancodeio-dev-db-1", "protocol": "HTTPS", "exploit_time_sec": 10, "status": "open"}, "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_added", "id": "edge-docker-ci-build-runner-docker-customer-prod-db", "payload": {"id": "edge-docker-ci-build-runner-docker-customer-prod-db", "source": "docker-ci-build-runner", "target": "docker-customer-prod-db", "protocol": "HTTPS", "exploit_time_sec": 10, "status": "open"}, "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_added", "id": "edge-docker-ci-build-runner-docker-session-redis", "payload": {"id": "edge-docker-ci-build-runner-docker-session-redis", "source": "docker-ci-build-runner", "target": "docker-session-redis", "protocol": "HTTPS", "exploit_time_sec": 10, "status": "open"}, "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_added", "id": "edge-docker-ci-build-runner-docker-scancodeio-dev-redis-1", "payload": {"id": "edge-docker-ci-build-runner-docker-scancodeio-dev-redis-1", "source": "docker-ci-build-runner", "target": "docker-scancodeio-dev-redis-1", "protocol": "HTTPS", "exploit_time_sec": 10, "status": "open"}, "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_added", "id": "edge-docker-ci-build-runner-docker-scancodeio-dev-db-1", "payload": {"id": "edge-docker-ci-build-runner-docker-scancodeio-dev-db-1", "source": "docker-ci-build-runner", "target": "docker-scancodeio-dev-db-1", "protocol": "HTTPS", "exploit_time_sec": 10, "status": "open"}, "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_removed", "id": "e-printer-dev", "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_removed", "id": "e-printer-admin", "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_removed", "id": "e-printer-finance", "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_removed", "id": "e-thermo-dev", "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_removed", "id": "e-dev-dmz", "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_removed", "id": "e-dev-build", "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_removed", "id": "e-dev-auth", "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_removed", "id": "e-admin-auth", "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_removed", "id": "e-admin-iam-admin", "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_removed", "id": "e-finance-storage", "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_removed", "id": "e-dmz-api", "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_removed", "id": "e-build-api", "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_removed", "id": "e-build-k8s", "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_removed", "id": "e-build-iam-cicd", "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_removed", "id": "e-auth-storage", "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_removed", "id": "e-auth-iam-admin", "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_removed", "id": "e-storage-staging", "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_removed", "id": "e-api-k8s", "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_removed", "id": "e-api-staging", "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_removed", "id": "e-api-crown", "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_removed", "id": "e-k8s-staging", "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_removed", "id": "e-k8s-iam-admin", "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_removed", "id": "e-k8s-crown", "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_removed", "id": "e-iam-cicd-iam-admin", "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_removed", "id": "e-iam-cicd-staging", "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_removed", "id": "e-iam-admin-crown", "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_removed", "id": "e-staging-crown", "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_removed", "id": "e-dev-storage", "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_removed", "id": "e-thermo-admin", "ts": 1793283048306, "source": "cloud"}
+{"type": "edge_removed", "id": "e-dmz-build", "ts": 1793283048306, "source": "cloud"}
+{"type": "node_added", "id": "host-tmssathya", "payload": {"id": "host-tmssathya", "label": "TMSSATHYA (Windows 11)", "type": "Workstation", "cvss_score": 6.5, "vulnerabilities": ["CVE-2024-38063"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "192.168.1.6", "hostname": "TMSSATHYA", "cloud_id": "ports:8000"}, "pos": {"x": 330, "y": 240}}, "ts": 1793288326373, "source": "cloud"}
+{"type": "node_added", "id": "lan-192-168-1-1", "payload": {"id": "lan-192-168-1-1", "label": "LAN Gateway (192.168.1.1)", "type": "IoT", "cvss_score": 7.8, "vulnerabilities": ["CVE-2023-20198"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "192.168.1.1", "hostname": "LAN Gateway (192.168.1.1)", "cloud_id": "44-fb-5a-9e-02-b6"}, "pos": {"x": 90, "y": 70}}, "ts": 1793288326373, "source": "cloud"}
+{"type": "node_added", "id": "iam-tms_s", "payload": {"id": "iam-tms_s", "label": "IAM User: tms_s@TMSSATHYA", "type": "IAM", "cvss_score": 8.2, "vulnerabilities": [], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "127.0.0.1", "hostname": "tms_s", "cloud_id": "uid:tms_s"}, "pos": {"x": 580, "y": 140}}, "ts": 1793288326373, "source": "cloud"}
+{"type": "node_added", "id": "svc-port-8000", "payload": {"id": "svc-port-8000", "label": "Local HTTPS Service (:8000)", "type": "Server", "cvss_score": 7.2, "vulnerabilities": ["CVE-2023-44487"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "192.168.1.6:8000", "hostname": "TMSSATHYA:8000", "cloud_id": "port-8000"}, "pos": {"x": 580, "y": 260}}, "ts": 1793288326373, "source": "cloud"}
+{"type": "node_added", "id": "db-local-crown-jewel", "payload": {"id": "db-local-crown-jewel", "label": "Host Protected Data Store (TMSSATHYA)", "type": "Database", "cvss_score": 9.4, "vulnerabilities": ["CVE-2024-0985"], "is_crown_jewel": true, "status": "secure", "refs": {"ip": "192.168.1.6:5432", "hostname": "local-prod-datastore", "cloud_id": "db-crown-01"}, "pos": {"x": 890, "y": 240}}, "ts": 1793288326373, "source": "cloud"}
+{"type": "node_removed", "id": "node-printer", "ts": 1793288326373, "source": "cloud"}
+{"type": "node_removed", "id": "node-thermostat", "ts": 1793288326373, "source": "cloud"}
+{"type": "node_removed", "id": "node-dev-laptop", "ts": 1793288326373, "source": "cloud"}
+{"type": "node_removed", "id": "node-admin-workstation", "ts": 1793288326373, "source": "cloud"}
+{"type": "node_removed", "id": "node-finance-laptop", "ts": 1793288326373, "source": "cloud"}
+{"type": "node_removed", "id": "node-dmz-proxy", "ts": 1793288326373, "source": "cloud"}
+{"type": "node_removed", "id": "node-build-server", "ts": 1793288326373, "source": "cloud"}
+{"type": "node_removed", "id": "node-auth-server", "ts": 1793288326373, "source": "cloud"}
+{"type": "node_removed", "id": "node-storage-node", "ts": 1793288326373, "source": "cloud"}
+{"type": "node_removed", "id": "node-api-gateway", "ts": 1793288326373, "source": "cloud"}
+{"type": "node_removed", "id": "node-k8s-worker", "ts": 1793288326373, "source": "cloud"}
+{"type": "node_removed", "id": "node-iam-cicd", "ts": 1793288326373, "source": "cloud"}
+{"type": "node_removed", "id": "node-iam-admin", "ts": 1793288326373, "source": "cloud"}
+{"type": "node_removed", "id": "node-staging-db", "ts": 1793288326373, "source": "cloud"}
+{"type": "node_removed", "id": "node-prod-crown-jewel", "ts": 1793288326373, "source": "cloud"}
+{"type": "edge_added", "id": "edge-lan-192-168-1-1-to-host", "payload": {"id": "edge-lan-192-168-1-1-to-host", "source": "lan-192-168-1-1", "target": "host-tmssathya", "protocol": "HTTPS", "exploit_time_sec": 10, "status": "open"}, "ts": 1793288326373, "source": "cloud"}
+{"type": "edge_added", "id": "edge-host-to-iam-tms_s", "payload": {"id": "edge-host-to-iam-tms_s", "source": "host-tmssathya", "target": "iam-tms_s", "protocol": "IAM_Trust", "exploit_time_sec": 6, "status": "open"}, "ts": 1793288326373, "source": "cloud"}
+{"type": "edge_added", "id": "edge-host-to-svc-port-8000", "payload": {"id": "edge-host-to-svc-port-8000", "source": "host-tmssathya", "target": "svc-port-8000", "protocol": "HTTPS", "exploit_time_sec": 8, "status": "open"}, "ts": 1793288326373, "source": "cloud"}
+{"type": "edge_added", "id": "edge-iam-tms_s-db-local-crown-jewel", "payload": {"id": "edge-iam-tms_s-db-local-crown-jewel", "source": "iam-tms_s", "target": "db-local-crown-jewel", "protocol": "HTTPS", "exploit_time_sec": 11, "status": "open"}, "ts": 1793288326373, "source": "cloud"}
+{"type": "edge_added", "id": "edge-svc-port-8000-db-local-crown-jewel", "payload": {"id": "edge-svc-port-8000-db-local-crown-jewel", "source": "svc-port-8000", "target": "db-local-crown-jewel", "protocol": "HTTPS", "exploit_time_sec": 12, "status": "open"}, "ts": 1793288326373, "source": "cloud"}
+{"type": "edge_removed", "id": "e-printer-dev", "ts": 1793288326373, "source": "cloud"}
+{"type": "edge_removed", "id": "e-printer-admin", "ts": 1793288326373, "source": "cloud"}
+{"type": "edge_removed", "id": "e-printer-finance", "ts": 1793288326373, "source": "cloud"}
+{"type": "edge_removed", "id": "e-thermo-dev", "ts": 1793288326373, "source": "cloud"}
+{"type": "edge_removed", "id": "e-dev-dmz", "ts": 1793288326373, "source": "cloud"}
+{"type": "edge_removed", "id": "e-dev-build", "ts": 1793288326373, "source": "cloud"}
+{"type": "edge_removed", "id": "e-dev-auth", "ts": 1793288326373, "source": "cloud"}
+{"type": "edge_removed", "id": "e-admin-auth", "ts": 1793288326373, "source": "cloud"}
+{"type": "edge_removed", "id": "e-admin-iam-admin", "ts": 1793288326373, "source": "cloud"}
+{"type": "edge_removed", "id": "e-finance-storage", "ts": 1793288326373, "source": "cloud"}
+{"type": "edge_removed", "id": "e-dmz-api", "ts": 1793288326373, "source": "cloud"}
+{"type": "edge_removed", "id": "e-build-api", "ts": 1793288326373, "source": "cloud"}
+{"type": "edge_removed", "id": "e-build-k8s", "ts": 1793288326373, "source": "cloud"}
+{"type": "edge_removed", "id": "e-build-iam-cicd", "ts": 1793288326373, "source": "cloud"}
+{"type": "edge_removed", "id": "e-auth-storage", "ts": 1793288326373, "source": "cloud"}
+{"type": "edge_removed", "id": "e-auth-iam-admin", "ts": 1793288326373, "source": "cloud"}
+{"type": "edge_removed", "id": "e-storage-staging", "ts": 1793288326373, "source": "cloud"}
+{"type": "edge_removed", "id": "e-api-k8s", "ts": 1793288326373, "source": "cloud"}
+{"type": "edge_removed", "id": "e-api-staging", "ts": 1793288326373, "source": "cloud"}
+{"type": "edge_removed", "id": "e-api-crown", "ts": 1793288326373, "source": "cloud"}
+{"type": "edge_removed", "id": "e-k8s-staging", "ts": 1793288326373, "source": "cloud"}
+{"type": "edge_removed", "id": "e-k8s-iam-admin", "ts": 1793288326373, "source": "cloud"}
+{"type": "edge_removed", "id": "e-k8s-crown", "ts": 1793288326373, "source": "cloud"}
+{"type": "edge_removed", "id": "e-iam-cicd-iam-admin", "ts": 1793288326373, "source": "cloud"}
+{"type": "edge_removed", "id": "e-iam-cicd-staging", "ts": 1793288326373, "source": "cloud"}
+{"type": "edge_removed", "id": "e-iam-admin-crown", "ts": 1793288326373, "source": "cloud"}
+{"type": "edge_removed", "id": "e-staging-crown", "ts": 1793288326373, "source": "cloud"}
+{"type": "edge_removed", "id": "e-dev-storage", "ts": 1793288326373, "source": "cloud"}
+{"type": "edge_removed", "id": "e-thermo-admin", "ts": 1793288326373, "source": "cloud"}
+{"type": "edge_removed", "id": "e-dmz-build", "ts": 1793288326373, "source": "cloud"}
+{"type": "node_added", "id": "host-tmssathya", "payload": {"id": "host-tmssathya", "label": "TMSSATHYA (Windows 11)", "type": "Workstation", "cvss_score": 6.5, "vulnerabilities": ["CVE-2024-38063"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "192.168.1.6", "hostname": "TMSSATHYA", "cloud_id": "ports:8000"}, "pos": {"x": 330, "y": 240}}, "ts": 1793289383106, "source": "cloud"}
+{"type": "node_added", "id": "lan-192-168-1-1", "payload": {"id": "lan-192-168-1-1", "label": "LAN Gateway (192.168.1.1)", "type": "IoT", "cvss_score": 7.8, "vulnerabilities": ["CVE-2023-20198"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "192.168.1.1", "hostname": "LAN Gateway (192.168.1.1)", "cloud_id": "44-fb-5a-9e-02-b6"}, "pos": {"x": 90, "y": 70}}, "ts": 1793289383106, "source": "cloud"}
+{"type": "node_added", "id": "lan-192-168-1-5", "payload": {"id": "lan-192-168-1-5", "label": "LAN Device 192.168.1.5 (bc-03-58)", "type": "Workstation", "cvss_score": 6.8, "vulnerabilities": ["CVE-2020-0796"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "192.168.1.5", "hostname": "LAN Device 192.168.1.5 (bc-03-58)", "cloud_id": "bc-03-58-5d-fc-5f"}, "pos": {"x": 90, "y": 155}}, "ts": 1793289383106, "source": "cloud"}
+{"type": "node_added", "id": "iam-tms_s", "payload": {"id": "iam-tms_s", "label": "IAM User: tms_s@TMSSATHYA", "type": "IAM", "cvss_score": 8.2, "vulnerabilities": [], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "127.0.0.1", "hostname": "tms_s", "cloud_id": "uid:tms_s"}, "pos": {"x": 580, "y": 140}}, "ts": 1793289383106, "source": "cloud"}
+{"type": "node_added", "id": "svc-port-8000", "payload": {"id": "svc-port-8000", "label": "Local HTTPS Service (:8000)", "type": "Server", "cvss_score": 7.2, "vulnerabilities": ["CVE-2023-44487"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "192.168.1.6:8000", "hostname": "TMSSATHYA:8000", "cloud_id": "port-8000"}, "pos": {"x": 580, "y": 260}}, "ts": 1793289383106, "source": "cloud"}
+{"type": "node_added", "id": "db-local-crown-jewel", "payload": {"id": "db-local-crown-jewel", "label": "Host Protected Data Store (TMSSATHYA)", "type": "Database", "cvss_score": 9.4, "vulnerabilities": ["CVE-2024-0985"], "is_crown_jewel": true, "status": "secure", "refs": {"ip": "192.168.1.6:5432", "hostname": "local-prod-datastore", "cloud_id": "db-crown-01"}, "pos": {"x": 890, "y": 240}}, "ts": 1793289383106, "source": "cloud"}
+{"type": "node_removed", "id": "site-client-ingress", "ts": 1793289383106, "source": "cloud"}
+{"type": "node_removed", "id": "site-web-frontend", "ts": 1793289383106, "source": "cloud"}
+{"type": "node_removed", "id": "site-breach-sentinel", "ts": 1793289383106, "source": "cloud"}
+{"type": "node_removed", "id": "site-api-service", "ts": 1793289383106, "source": "cloud"}
+{"type": "node_removed", "id": "site-iam-role", "ts": 1793289383106, "source": "cloud"}
+{"type": "node_removed", "id": "site-customer-db", "ts": 1793289383106, "source": "cloud"}
+{"type": "edge_added", "id": "edge-lan-192-168-1-1-to-host", "payload": {"id": "edge-lan-192-168-1-1-to-host", "source": "lan-192-168-1-1", "target": "host-tmssathya", "protocol": "HTTPS", "exploit_time_sec": 10, "status": "open"}, "ts": 1793289383106, "source": "cloud"}
+{"type": "edge_added", "id": "edge-lan-192-168-1-5-to-host", "payload": {"id": "edge-lan-192-168-1-5-to-host", "source": "lan-192-168-1-5", "target": "host-tmssathya", "protocol": "HTTPS", "exploit_time_sec": 10, "status": "open"}, "ts": 1793289383106, "source": "cloud"}
+{"type": "edge_added", "id": "edge-host-to-iam-tms_s", "payload": {"id": "edge-host-to-iam-tms_s", "source": "host-tmssathya", "target": "iam-tms_s", "protocol": "IAM_Trust", "exploit_time_sec": 6, "status": "open"}, "ts": 1793289383106, "source": "cloud"}
+{"type": "edge_added", "id": "edge-host-to-svc-port-8000", "payload": {"id": "edge-host-to-svc-port-8000", "source": "host-tmssathya", "target": "svc-port-8000", "protocol": "HTTPS", "exploit_time_sec": 8, "status": "open"}, "ts": 1793289383106, "source": "cloud"}
+{"type": "edge_added", "id": "edge-iam-tms_s-db-local-crown-jewel", "payload": {"id": "edge-iam-tms_s-db-local-crown-jewel", "source": "iam-tms_s", "target": "db-local-crown-jewel", "protocol": "HTTPS", "exploit_time_sec": 11, "status": "open"}, "ts": 1793289383106, "source": "cloud"}
+{"type": "edge_added", "id": "edge-svc-port-8000-db-local-crown-jewel", "payload": {"id": "edge-svc-port-8000-db-local-crown-jewel", "source": "svc-port-8000", "target": "db-local-crown-jewel", "protocol": "HTTPS", "exploit_time_sec": 12, "status": "open"}, "ts": 1793289383106, "source": "cloud"}
+{"type": "edge_removed", "id": "e-client-web", "ts": 1793289383106, "source": "cloud"}
+{"type": "edge_removed", "id": "e-web-sentinel", "ts": 1793289383106, "source": "cloud"}
+{"type": "edge_removed", "id": "e-web-api", "ts": 1793289383106, "source": "cloud"}
+{"type": "edge_removed", "id": "e-api-iam", "ts": 1793289383106, "source": "cloud"}
+{"type": "edge_removed", "id": "e-api-db", "ts": 1793289383106, "source": "cloud"}
+{"type": "edge_removed", "id": "e-iam-db", "ts": 1793289383106, "source": "cloud"}
+{"type": "node_added", "id": "host-tmssathya", "payload": {"id": "host-tmssathya", "label": "TMSSATHYA (Windows 11)", "type": "Workstation", "cvss_score": 8.5, "vulnerabilities": ["CVE-2023-41056", "CVE-2022-0543"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "192.168.1.6", "hostname": "TMSSATHYA", "cloud_id": "ports:135,6379"}, "pos": {"x": 330, "y": 240}}, "ts": 1793290468239, "source": "cloud"}
+{"type": "node_added", "id": "lan-192-168-1-1", "payload": {"id": "lan-192-168-1-1", "label": "LAN Gateway (192.168.1.1)", "type": "IoT", "cvss_score": 7.8, "vulnerabilities": ["CVE-2023-20198"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "192.168.1.1", "hostname": "LAN Gateway (192.168.1.1)", "cloud_id": "44-fb-5a-9e-02-b6"}, "pos": {"x": 90, "y": 70}}, "ts": 1793290468239, "source": "cloud"}
+{"type": "node_added", "id": "iam-tms_s", "payload": {"id": "iam-tms_s", "label": "IAM User: tms_s@TMSSATHYA", "type": "IAM", "cvss_score": 8.2, "vulnerabilities": [], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "127.0.0.1", "hostname": "tms_s", "cloud_id": "uid:tms_s"}, "pos": {"x": 580, "y": 140}}, "ts": 1793290468239, "source": "cloud"}
+{"type": "node_added", "id": "svc-port-135", "payload": {"id": "svc-port-135", "label": "Local HTTPS Service (:135)", "type": "Server", "cvss_score": 7.2, "vulnerabilities": ["CVE-2023-44487"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "192.168.1.6:135", "hostname": "TMSSATHYA:135", "cloud_id": "port-135"}, "pos": {"x": 580, "y": 260}}, "ts": 1793290468239, "source": "cloud"}
+{"type": "node_added", "id": "svc-port-6379", "payload": {"id": "svc-port-6379", "label": "Local HTTPS Service (:6379)", "type": "Database", "cvss_score": 8.5, "vulnerabilities": ["CVE-2023-41056", "CVE-2022-0543"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "192.168.1.6:6379", "hostname": "TMSSATHYA:6379", "cloud_id": "port-6379"}, "pos": {"x": 580, "y": 340}}, "ts": 1793290468239, "source": "cloud"}
+{"type": "node_added", "id": "db-local-crown-jewel", "payload": {"id": "db-local-crown-jewel", "label": "Host Protected Data Store (TMSSATHYA)", "type": "Database", "cvss_score": 9.4, "vulnerabilities": ["CVE-2024-0985"], "is_crown_jewel": true, "status": "secure", "refs": {"ip": "192.168.1.6:5432", "hostname": "local-prod-datastore", "cloud_id": "db-crown-01"}, "pos": {"x": 890, "y": 240}}, "ts": 1793290468239, "source": "cloud"}
+{"type": "node_removed", "id": "site-client-ingress", "ts": 1793290468239, "source": "cloud"}
+{"type": "node_removed", "id": "site-web-frontend", "ts": 1793290468239, "source": "cloud"}
+{"type": "node_removed", "id": "site-breach-sentinel", "ts": 1793290468239, "source": "cloud"}
+{"type": "node_removed", "id": "site-api-service", "ts": 1793290468239, "source": "cloud"}
+{"type": "node_removed", "id": "site-iam-role", "ts": 1793290468239, "source": "cloud"}
+{"type": "node_removed", "id": "site-customer-db", "ts": 1793290468239, "source": "cloud"}
+{"type": "edge_added", "id": "edge-lan-192-168-1-1-to-host", "payload": {"id": "edge-lan-192-168-1-1-to-host", "source": "lan-192-168-1-1", "target": "host-tmssathya", "protocol": "HTTPS", "exploit_time_sec": 10, "status": "open"}, "ts": 1793290468239, "source": "cloud"}
+{"type": "edge_added", "id": "edge-host-to-iam-tms_s", "payload": {"id": "edge-host-to-iam-tms_s", "source": "host-tmssathya", "target": "iam-tms_s", "protocol": "IAM_Trust", "exploit_time_sec": 6, "status": "open"}, "ts": 1793290468239, "source": "cloud"}
+{"type": "edge_added", "id": "edge-host-to-svc-port-135", "payload": {"id": "edge-host-to-svc-port-135", "source": "host-tmssathya", "target": "svc-port-135", "protocol": "HTTPS", "exploit_time_sec": 8, "status": "open"}, "ts": 1793290468239, "source": "cloud"}
+{"type": "edge_added", "id": "edge-host-to-svc-port-6379", "payload": {"id": "edge-host-to-svc-port-6379", "source": "host-tmssathya", "target": "svc-port-6379", "protocol": "HTTPS", "exploit_time_sec": 8, "status": "open"}, "ts": 1793290468239, "source": "cloud"}
+{"type": "edge_added", "id": "edge-iam-tms_s-db-local-crown-jewel", "payload": {"id": "edge-iam-tms_s-db-local-crown-jewel", "source": "iam-tms_s", "target": "db-local-crown-jewel", "protocol": "HTTPS", "exploit_time_sec": 11, "status": "open"}, "ts": 1793290468239, "source": "cloud"}
+{"type": "edge_added", "id": "edge-svc-port-135-db-local-crown-jewel", "payload": {"id": "edge-svc-port-135-db-local-crown-jewel", "source": "svc-port-135", "target": "db-local-crown-jewel", "protocol": "HTTPS", "exploit_time_sec": 12, "status": "open"}, "ts": 1793290468239, "source": "cloud"}
+{"type": "edge_added", "id": "edge-svc-port-6379-db-local-crown-jewel", "payload": {"id": "edge-svc-port-6379-db-local-crown-jewel", "source": "svc-port-6379", "target": "db-local-crown-jewel", "protocol": "HTTPS", "exploit_time_sec": 12, "status": "open"}, "ts": 1793290468239, "source": "cloud"}
+{"type": "edge_removed", "id": "e-client-web", "ts": 1793290468239, "source": "cloud"}
+{"type": "edge_removed", "id": "e-web-sentinel", "ts": 1793290468239, "source": "cloud"}
+{"type": "edge_removed", "id": "e-web-api", "ts": 1793290468239, "source": "cloud"}
+{"type": "edge_removed", "id": "e-api-iam", "ts": 1793290468239, "source": "cloud"}
+{"type": "edge_removed", "id": "e-api-db", "ts": 1793290468239, "source": "cloud"}
+{"type": "edge_removed", "id": "e-iam-db", "ts": 1793290468239, "source": "cloud"}
+{"type": "node_added", "id": "host-tmssathya", "payload": {"id": "host-tmssathya", "label": "TMSSATHYA (Windows 11)", "type": "Workstation", "cvss_score": 8.5, "vulnerabilities": ["CVE-2023-41056", "CVE-2022-0543"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "192.168.1.6", "hostname": "TMSSATHYA", "cloud_id": "ports:135,6379"}, "pos": {"x": 330, "y": 240}}, "ts": 1793290897081, "source": "cloud"}
+{"type": "node_added", "id": "lan-192-168-1-1", "payload": {"id": "lan-192-168-1-1", "label": "LAN Gateway (192.168.1.1)", "type": "IoT", "cvss_score": 7.8, "vulnerabilities": ["CVE-2023-20198"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "192.168.1.1", "hostname": "LAN Gateway (192.168.1.1)", "cloud_id": "44-fb-5a-9e-02-b6"}, "pos": {"x": 90, "y": 70}}, "ts": 1793290897081, "source": "cloud"}
+{"type": "node_added", "id": "iam-tms_s", "payload": {"id": "iam-tms_s", "label": "IAM User: tms_s@TMSSATHYA", "type": "IAM", "cvss_score": 8.2, "vulnerabilities": [], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "127.0.0.1", "hostname": "tms_s", "cloud_id": "uid:tms_s"}, "pos": {"x": 580, "y": 140}}, "ts": 1793290897081, "source": "cloud"}
+{"type": "node_added", "id": "svc-port-135", "payload": {"id": "svc-port-135", "label": "Local HTTPS Service (:135)", "type": "Server", "cvss_score": 7.2, "vulnerabilities": ["CVE-2023-44487"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "192.168.1.6:135", "hostname": "TMSSATHYA:135", "cloud_id": "port-135"}, "pos": {"x": 580, "y": 260}}, "ts": 1793290897081, "source": "cloud"}
+{"type": "node_added", "id": "svc-port-6379", "payload": {"id": "svc-port-6379", "label": "Local HTTPS Service (:6379)", "type": "Database", "cvss_score": 8.5, "vulnerabilities": ["CVE-2023-41056", "CVE-2022-0543"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "192.168.1.6:6379", "hostname": "TMSSATHYA:6379", "cloud_id": "port-6379"}, "pos": {"x": 580, "y": 340}}, "ts": 1793290897081, "source": "cloud"}
+{"type": "node_added", "id": "db-local-crown-jewel", "payload": {"id": "db-local-crown-jewel", "label": "Host Protected Data Store (TMSSATHYA)", "type": "Database", "cvss_score": 9.4, "vulnerabilities": ["CVE-2024-0985"], "is_crown_jewel": true, "status": "secure", "refs": {"ip": "192.168.1.6:5432", "hostname": "local-prod-datastore", "cloud_id": "db-crown-01"}, "pos": {"x": 890, "y": 240}}, "ts": 1793290897081, "source": "cloud"}
+{"type": "node_removed", "id": "node-printer", "ts": 1793290897081, "source": "cloud"}
+{"type": "node_removed", "id": "node-thermostat", "ts": 1793290897081, "source": "cloud"}
+{"type": "node_removed", "id": "node-dev-laptop", "ts": 1793290897081, "source": "cloud"}
+{"type": "node_removed", "id": "node-admin-workstation", "ts": 1793290897081, "source": "cloud"}
+{"type": "node_removed", "id": "node-finance-laptop", "ts": 1793290897081, "source": "cloud"}
+{"type": "node_removed", "id": "node-dmz-proxy", "ts": 1793290897081, "source": "cloud"}
+{"type": "node_removed", "id": "node-build-server", "ts": 1793290897081, "source": "cloud"}
+{"type": "node_removed", "id": "node-auth-server", "ts": 1793290897081, "source": "cloud"}
+{"type": "node_removed", "id": "node-storage-node", "ts": 1793290897081, "source": "cloud"}
+{"type": "node_removed", "id": "node-api-gateway", "ts": 1793290897081, "source": "cloud"}
+{"type": "node_removed", "id": "node-k8s-worker", "ts": 1793290897081, "source": "cloud"}
+{"type": "node_removed", "id": "node-iam-cicd", "ts": 1793290897081, "source": "cloud"}
+{"type": "node_removed", "id": "node-iam-admin", "ts": 1793290897081, "source": "cloud"}
+{"type": "node_removed", "id": "node-staging-db", "ts": 1793290897081, "source": "cloud"}
+{"type": "node_removed", "id": "node-prod-crown-jewel", "ts": 1793290897081, "source": "cloud"}
+{"type": "edge_added", "id": "edge-lan-192-168-1-1-to-host", "payload": {"id": "edge-lan-192-168-1-1-to-host", "source": "lan-192-168-1-1", "target": "host-tmssathya", "protocol": "HTTPS", "exploit_time_sec": 10, "status": "open"}, "ts": 1793290897081, "source": "cloud"}
+{"type": "edge_added", "id": "edge-host-to-iam-tms_s", "payload": {"id": "edge-host-to-iam-tms_s", "source": "host-tmssathya", "target": "iam-tms_s", "protocol": "IAM_Trust", "exploit_time_sec": 6, "status": "open"}, "ts": 1793290897081, "source": "cloud"}
+{"type": "edge_added", "id": "edge-host-to-svc-port-135", "payload": {"id": "edge-host-to-svc-port-135", "source": "host-tmssathya", "target": "svc-port-135", "protocol": "HTTPS", "exploit_time_sec": 8, "status": "open"}, "ts": 1793290897081, "source": "cloud"}
+{"type": "edge_added", "id": "edge-host-to-svc-port-6379", "payload": {"id": "edge-host-to-svc-port-6379", "source": "host-tmssathya", "target": "svc-port-6379", "protocol": "HTTPS", "exploit_time_sec": 8, "status": "open"}, "ts": 1793290897081, "source": "cloud"}
+{"type": "edge_added", "id": "edge-iam-tms_s-db-local-crown-jewel", "payload": {"id": "edge-iam-tms_s-db-local-crown-jewel", "source": "iam-tms_s", "target": "db-local-crown-jewel", "protocol": "HTTPS", "exploit_time_sec": 11, "status": "open"}, "ts": 1793290897081, "source": "cloud"}
+{"type": "edge_added", "id": "edge-svc-port-135-db-local-crown-jewel", "payload": {"id": "edge-svc-port-135-db-local-crown-jewel", "source": "svc-port-135", "target": "db-local-crown-jewel", "protocol": "HTTPS", "exploit_time_sec": 12, "status": "open"}, "ts": 1793290897081, "source": "cloud"}
+{"type": "edge_added", "id": "edge-svc-port-6379-db-local-crown-jewel", "payload": {"id": "edge-svc-port-6379-db-local-crown-jewel", "source": "svc-port-6379", "target": "db-local-crown-jewel", "protocol": "HTTPS", "exploit_time_sec": 12, "status": "open"}, "ts": 1793290897081, "source": "cloud"}
+{"type": "edge_removed", "id": "e-printer-dev", "ts": 1793290897081, "source": "cloud"}
+{"type": "edge_removed", "id": "e-printer-admin", "ts": 1793290897081, "source": "cloud"}
+{"type": "edge_removed", "id": "e-printer-finance", "ts": 1793290897081, "source": "cloud"}
+{"type": "edge_removed", "id": "e-thermo-dev", "ts": 1793290897081, "source": "cloud"}
+{"type": "edge_removed", "id": "e-dev-dmz", "ts": 1793290897081, "source": "cloud"}
+{"type": "edge_removed", "id": "e-dev-build", "ts": 1793290897081, "source": "cloud"}
+{"type": "edge_removed", "id": "e-dev-auth", "ts": 1793290897081, "source": "cloud"}
+{"type": "edge_removed", "id": "e-admin-auth", "ts": 1793290897081, "source": "cloud"}
+{"type": "edge_removed", "id": "e-admin-iam-admin", "ts": 1793290897081, "source": "cloud"}
+{"type": "edge_removed", "id": "e-finance-storage", "ts": 1793290897081, "source": "cloud"}
+{"type": "edge_removed", "id": "e-dmz-api", "ts": 1793290897081, "source": "cloud"}
+{"type": "edge_removed", "id": "e-build-api", "ts": 1793290897081, "source": "cloud"}
+{"type": "edge_removed", "id": "e-build-k8s", "ts": 1793290897081, "source": "cloud"}
+{"type": "edge_removed", "id": "e-build-iam-cicd", "ts": 1793290897081, "source": "cloud"}
+{"type": "edge_removed", "id": "e-auth-storage", "ts": 1793290897081, "source": "cloud"}
+{"type": "edge_removed", "id": "e-auth-iam-admin", "ts": 1793290897081, "source": "cloud"}
+{"type": "edge_removed", "id": "e-storage-staging", "ts": 1793290897081, "source": "cloud"}
+{"type": "edge_removed", "id": "e-api-k8s", "ts": 1793290897081, "source": "cloud"}
+{"type": "edge_removed", "id": "e-api-staging", "ts": 1793290897081, "source": "cloud"}
+{"type": "edge_removed", "id": "e-api-crown", "ts": 1793290897081, "source": "cloud"}
+{"type": "edge_removed", "id": "e-k8s-staging", "ts": 1793290897081, "source": "cloud"}
+{"type": "edge_removed", "id": "e-k8s-iam-admin", "ts": 1793290897081, "source": "cloud"}
+{"type": "edge_removed", "id": "e-k8s-crown", "ts": 1793290897081, "source": "cloud"}
+{"type": "edge_removed", "id": "e-iam-cicd-iam-admin", "ts": 1793290897081, "source": "cloud"}
+{"type": "edge_removed", "id": "e-iam-cicd-staging", "ts": 1793290897081, "source": "cloud"}
+{"type": "edge_removed", "id": "e-iam-admin-crown", "ts": 1793290897081, "source": "cloud"}
+{"type": "edge_removed", "id": "e-staging-crown", "ts": 1793290897081, "source": "cloud"}
+{"type": "edge_removed", "id": "e-dev-storage", "ts": 1793290897081, "source": "cloud"}
+{"type": "edge_removed", "id": "e-thermo-admin", "ts": 1793290897081, "source": "cloud"}
+{"type": "edge_removed", "id": "e-dmz-build", "ts": 1793290897081, "source": "cloud"}
+{"type": "node_added", "id": "host-tmssathya", "payload": {"id": "host-tmssathya", "label": "TMSSATHYA (Windows 11)", "type": "Workstation", "cvss_score": 8.8, "vulnerabilities": ["CVE-2020-0796", "CVE-2022-41128"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "192.168.1.6", "hostname": "TMSSATHYA", "cloud_id": "ports:445"}, "pos": {"x": 330, "y": 240}}, "ts": 1793291371592, "source": "cloud"}
+{"type": "node_added", "id": "lan-192-168-1-1", "payload": {"id": "lan-192-168-1-1", "label": "LAN Gateway (192.168.1.1)", "type": "IoT", "cvss_score": 7.8, "vulnerabilities": ["CVE-2023-20198"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "192.168.1.1", "hostname": "LAN Gateway (192.168.1.1)", "cloud_id": "44-fb-5a-9e-02-b6"}, "pos": {"x": 90, "y": 70}}, "ts": 1793291371592, "source": "cloud"}
+{"type": "node_added", "id": "iam-tms_s", "payload": {"id": "iam-tms_s", "label": "IAM User: tms_s@TMSSATHYA", "type": "IAM", "cvss_score": 8.2, "vulnerabilities": [], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "127.0.0.1", "hostname": "tms_s", "cloud_id": "uid:tms_s"}, "pos": {"x": 580, "y": 140}}, "ts": 1793291371592, "source": "cloud"}
+{"type": "node_added", "id": "svc-port-445", "payload": {"id": "svc-port-445", "label": "Local SMB Service (:445)", "type": "Server", "cvss_score": 8.8, "vulnerabilities": ["CVE-2020-0796", "CVE-2022-41128"], "is_crown_jewel": false, "status": "secure", "refs": {"ip": "192.168.1.6:445", "hostname": "TMSSATHYA:445", "cloud_id": "port-445"}, "pos": {"x": 580, "y": 260}}, "ts": 1793291371592, "source": "cloud"}
+{"type": "node_added", "id": "db-local-crown-jewel", "payload": {"id": "db-local-crown-jewel", "label": "Host Protected Data Store (TMSSATHYA)", "type": "Database", "cvss_score": 9.4, "vulnerabilities": ["CVE-2024-0985"], "is_crown_jewel": true, "status": "secure", "refs": {"ip": "192.168.1.6:5432", "hostname": "local-prod-datastore", "cloud_id": "db-crown-01"}, "pos": {"x": 890, "y": 240}}, "ts": 1793291371592, "source": "cloud"}
+{"type": "node_removed", "id": "node-printer", "ts": 1793291371592, "source": "cloud"}
+{"type": "node_removed", "id": "node-thermostat", "ts": 1793291371592, "source": "cloud"}
+{"type": "node_removed", "id": "node-dev-laptop", "ts": 1793291371592, "source": "cloud"}
+{"type": "node_removed", "id": "node-admin-workstation", "ts": 1793291371592, "source": "cloud"}
+{"type": "node_removed", "id": "node-finance-laptop", "ts": 1793291371592, "source": "cloud"}
+{"type": "node_removed", "id": "node-dmz-proxy", "ts": 1793291371592, "source": "cloud"}
+{"type": "node_removed", "id": "node-build-server", "ts": 1793291371592, "source": "cloud"}
+{"type": "node_removed", "id": "node-auth-server", "ts": 1793291371592, "source": "cloud"}
+{"type": "node_removed", "id": "node-storage-node", "ts": 1793291371592, "source": "cloud"}
+{"type": "node_removed", "id": "node-api-gateway", "ts": 1793291371592, "source": "cloud"}
+{"type": "node_removed", "id": "node-k8s-worker", "ts": 1793291371592, "source": "cloud"}
+{"type": "node_removed", "id": "node-iam-cicd", "ts": 1793291371592, "source": "cloud"}
+{"type": "node_removed", "id": "node-iam-admin", "ts": 1793291371592, "source": "cloud"}
+{"type": "node_removed", "id": "node-staging-db", "ts": 1793291371592, "source": "cloud"}
+{"type": "node_removed", "id": "node-prod-crown-jewel", "ts": 1793291371592, "source": "cloud"}
+{"type": "edge_added", "id": "edge-lan-192-168-1-1-to-host", "payload": {"id": "edge-lan-192-168-1-1-to-host", "source": "lan-192-168-1-1", "target": "host-tmssathya", "protocol": "SMB", "exploit_time_sec": 10, "status": "open"}, "ts": 1793291371592, "source": "cloud"}
+{"type": "edge_added", "id": "edge-host-to-iam-tms_s", "payload": {"id": "edge-host-to-iam-tms_s", "source": "host-tmssathya", "target": "iam-tms_s", "protocol": "IAM_Trust", "exploit_time_sec": 6, "status": "open"}, "ts": 1793291371592, "source": "cloud"}
+{"type": "edge_added", "id": "edge-host-to-svc-port-445", "payload": {"id": "edge-host-to-svc-port-445", "source": "host-tmssathya", "target": "svc-port-445", "protocol": "SMB", "exploit_time_sec": 8, "status": "open"}, "ts": 1793291371592, "source": "cloud"}
+{"type": "edge_added", "id": "edge-iam-tms_s-db-local-crown-jewel", "payload": {"id": "edge-iam-tms_s-db-local-crown-jewel", "source": "iam-tms_s", "target": "db-local-crown-jewel", "protocol": "HTTPS", "exploit_time_sec": 11, "status": "open"}, "ts": 1793291371592, "source": "cloud"}
+{"type": "edge_added", "id": "edge-svc-port-445-db-local-crown-jewel", "payload": {"id": "edge-svc-port-445-db-local-crown-jewel", "source": "svc-port-445", "target": "db-local-crown-jewel", "protocol": "HTTPS", "exploit_time_sec": 12, "status": "open"}, "ts": 1793291371592, "source": "cloud"}
+{"type": "edge_removed", "id": "e-printer-dev", "ts": 1793291371592, "source": "cloud"}
+{"type": "edge_removed", "id": "e-printer-admin", "ts": 1793291371592, "source": "cloud"}
+{"type": "edge_removed", "id": "e-printer-finance", "ts": 1793291371592, "source": "cloud"}
+{"type": "edge_removed", "id": "e-thermo-dev", "ts": 1793291371592, "source": "cloud"}
+{"type": "edge_removed", "id": "e-dev-dmz", "ts": 1793291371592, "source": "cloud"}
+{"type": "edge_removed", "id": "e-dev-build", "ts": 1793291371592, "source": "cloud"}
+{"type": "edge_removed", "id": "e-dev-auth", "ts": 1793291371592, "source": "cloud"}
+{"type": "edge_removed", "id": "e-admin-auth", "ts": 1793291371592, "source": "cloud"}
+{"type": "edge_removed", "id": "e-admin-iam-admin", "ts": 1793291371592, "source": "cloud"}
+{"type": "edge_removed", "id": "e-finance-storage", "ts": 1793291371592, "source": "cloud"}
+{"type": "edge_removed", "id": "e-dmz-api", "ts": 1793291371592, "source": "cloud"}
+{"type": "edge_removed", "id": "e-build-api", "ts": 1793291371592, "source": "cloud"}
+{"type": "edge_removed", "id": "e-build-k8s", "ts": 1793291371592, "source": "cloud"}
+{"type": "edge_removed", "id": "e-build-iam-cicd", "ts": 1793291371592, "source": "cloud"}
+{"type": "edge_removed", "id": "e-auth-storage", "ts": 1793291371592, "source": "cloud"}
+{"type": "edge_removed", "id": "e-auth-iam-admin", "ts": 1793291371592, "source": "cloud"}
+{"type": "edge_removed", "id": "e-storage-staging", "ts": 1793291371592, "source": "cloud"}
+{"type": "edge_removed", "id": "e-api-k8s", "ts": 1793291371592, "source": "cloud"}
+{"type": "edge_removed", "id": "e-api-staging", "ts": 1793291371592, "source": "cloud"}
+{"type": "edge_removed", "id": "e-api-crown", "ts": 1793291371592, "source": "cloud"}
+{"type": "edge_removed", "id": "e-k8s-staging", "ts": 1793291371592, "source": "cloud"}
+{"type": "edge_removed", "id": "e-k8s-iam-admin", "ts": 1793291371592, "source": "cloud"}
+{"type": "edge_removed", "id": "e-k8s-crown", "ts": 1793291371592, "source": "cloud"}
+{"type": "edge_removed", "id": "e-iam-cicd-iam-admin", "ts": 1793291371592, "source": "cloud"}
+{"type": "edge_removed", "id": "e-iam-cicd-staging", "ts": 1793291371592, "source": "cloud"}
+{"type": "edge_removed", "id": "e-iam-admin-crown", "ts": 1793291371592, "source": "cloud"}
+{"type": "edge_removed", "id": "e-staging-crown", "ts": 1793291371592, "source": "cloud"}
+{"type": "edge_removed", "id": "e-dev-storage", "ts": 1793291371592, "source": "cloud"}
+{"type": "edge_removed", "id": "e-thermo-admin", "ts": 1793291371592, "source": "cloud"}
+{"type": "edge_removed", "id": "e-dmz-build", "ts": 1793291371592, "source": "cloud"}

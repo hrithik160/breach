@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@import "@xyflow/react/dist/style.css";
+
+body {
+  background-color: #060911;
+  color: #f8fafc;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  overflow: hidden;
+  user-select: none;
+}

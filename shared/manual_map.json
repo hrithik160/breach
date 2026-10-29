@@ -1,0 +1,15 @@
+{
+  "192.168.1.105": "node-printer",
+  "printer-office.corp.internal": "node-printer",
+  "192.168.2.45": "node-dev-laptop",
+  "laptop-alice.corp.internal": "node-dev-laptop",
+  "192.168.2.12": "node-admin-workstation",
+  "admin-ws-01.corp.internal": "node-admin-workstation",
+  "10.0.2.10": "node-build-server",
+  "jenkins-ci.corp.internal": "node-build-server",
+  "arn:aws:iam::123456789012:role/CICD-Deployer": "node-iam-cicd",
+  "arn:aws:iam::123456789012:role/DataStoreAdmin": "node-iam-admin",
+  "10.0.99.100": "node-prod-crown-jewel",
+  "prod-customer-db.internal": "node-prod-crown-jewel",
+  "rds-prod-primary-01": "node-prod-crown-jewel"
+}

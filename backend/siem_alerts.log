@@ -1,0 +1,35 @@
+host=rds-prod-customers alert=compromise
+{"src_ip":"10.0.2.14","dst_ip":"10.0.10.12","alert":"lateral_pivot"}
+{"src_ip":"10.0.2.14","dst_ip":"10.0.10.12","alert":"lateral_pivot"}
+host=10.0.10.12 alert=compromise cve=CVE-2024-23897 cvss=9.4
+host=10.0.10.12 alert=compromise cve=CVE-2024-23897 cvss=9.4
+host=10.0.10.12 alert=compromise cve=CVE-2024-23897 cvss=9.4
+host=10.0.10.12 alert=compromise cve=CVE-2024-23897 cvss=9.4
+host=10.0.10.12 alert=compromise cve=CVE-2024-23897 cvss=9.4
+host=10.0.10.12 alert=compromise cve=CVE-2024-23897 cvss=9.4
+host=192.168.1.6 alert=compromise
+host=192.168.1.6 alert=compromise
+host=192.168.1.6 alert=compromise
+timestamp=1793280875751 src=127.0.0.1 host=node-printer vector=printer_overflow payload="test" alert=CRITICAL_INTRUSION
+timestamp=1793281180425 src=127.0.0.1 host=node-dmz-proxy vector=sqli payload="admin' OR 1=1 --" alert=CRITICAL_INTRUSION
+timestamp=1793281180438 src=127.0.0.1 host=node-dev-laptop vector=leaked_api_key payload="AKIAIOSFODNN7EXAMPLEREDTEAM" alert=CRITICAL_INTRUSION
+timestamp=1793281180449 src=127.0.0.1 host=node-dmz-proxy vector=path_traversal payload="../../../../etc/shadow" alert=CRITICAL_INTRUSION
+timestamp=1793281180466 src=127.0.0.1 host=node-printer vector=printer_overflow payload="HP_RAW_SOCKET_BUFFER_OVERFLOW" alert=CRITICAL_INTRUSION
+timestamp=1793281267431 src=127.0.0.1 host=node-dmz-proxy vector=sqli payload="admin' OR 1=1 --" alert=CRITICAL_INTRUSION
+timestamp=1793281783784 src=127.0.0.1 host=node-dev-laptop vector=leaked_api_key payload="AKIAIOSFODNN7EXAMPLEREDTEAM" alert=CRITICAL_INTRUSION
+timestamp=1793281787621 src=127.0.0.1 host=node-dev-laptop vector=leaked_api_key payload="AKIAIOSFODNN7EXAMPLEREDTEAM" alert=CRITICAL_INTRUSION
+timestamp=1793288765838 src=127.0.0.1 host=host-tmssathya vector=sqli payload="admin' OR 1=1 --" alert=CRITICAL_INTRUSION
+timestamp=1793288782691 src=127.0.0.1 host=host-tmssathya vector=sqli payload="admin' OR 1=1 --" alert=CRITICAL_INTRUSION
+timestamp=1793289344452 src=127.0.0.1 host=site-api-service vector=sqli payload="admin' OR 1=1 --" alert=CRITICAL_INTRUSION
+timestamp=1793289797508 src=127.0.0.1 host=site-iam-role vector=leaked_api_key payload="AKIAIOSFODNN7EXAMPLEREDTEAM" alert=CRITICAL_INTRUSION
+timestamp=1793290372555 src=127.0.0.1 host=site-api-service vector=sqli payload="admin' OR 1=1 --" alert=CRITICAL_INTRUSION
+timestamp=1793290374881 src=127.0.0.1 host=site-api-service vector=sqli payload="admin' OR 1=1 --" alert=CRITICAL_INTRUSION
+timestamp=1793290378921 src=127.0.0.1 host=site-api-service vector=sqli payload="admin' OR 1=1 --" alert=CRITICAL_INTRUSION
+timestamp=1793290386458 src=127.0.0.1 host=site-iam-role vector=leaked_api_key payload="AKIAIOSFODNN7EXAMPLEREDTEAM" alert=CRITICAL_INTRUSION
+timestamp=1793290390657 src=127.0.0.1 host=site-iam-role vector=leaked_api_key payload="AKIAIOSFODNN7EXAMPLEREDTEAM" alert=CRITICAL_INTRUSION
+timestamp=1793290391841 src=127.0.0.1 host=site-web-frontend vector=path_traversal payload="../../../../etc/shadow" alert=CRITICAL_INTRUSION
+timestamp=1793290393593 src=127.0.0.1 host=site-web-frontend vector=path_traversal payload="../../../../etc/shadow" alert=CRITICAL_INTRUSION
+timestamp=1793290995302 src=127.0.0.1 host=site-web-frontend vector=path_traversal payload="../../../../etc/shadow" alert=CRITICAL_INTRUSION
+timestamp=1793291386152 src=127.0.0.1 host=site-web-frontend vector=path_traversal payload="../../../../etc/shadow" alert=CRITICAL_INTRUSION
+timestamp=1793291518288 src=127.0.0.1 host=site-api-service vector=sqli payload="admin' OR 1=1 --" alert=CRITICAL_INTRUSION
+timestamp=1793291547741 src=127.0.0.1 host=site-iam-role vector=leaked_api_key payload="AKIAIOSFODNN7EXAMPLEREDTEAM" alert=CRITICAL_INTRUSION

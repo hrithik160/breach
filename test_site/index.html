@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apex Cloud Customer Portal — Test Target</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Universal Breach Sentinel SDK (can be dropped into ANY website) -->
+  <script src="breach_sentinel.js"></script>
+</head>
+<body>
+  <div class="navbar">
+    <div class="brand">🌐 Apex Cloud Enterprise</div>
+    <div class="nav-links">
+      <a href="#" class="active">Customer Login</a>
+      <a href="#">API Console</a>
+      <a href="#">Documentation</a>
+      <a href="/demo" target="_blank">Security Command Center ↗</a>
+    </div>
+  </div>
+
+  <div class="sentinel-banner">
+    <div>🛡️ <b>Breach Sentinel Active:</b> Any exploit submitted on this page triggers an infection wave in the simulator.</div>
+    <div><a href="/demo" target="_blank">Open Breach Domino (/demo) ↗</a></div>
+  </div>
+
+  <div class="container">
+    <div class="hero">
+      <h1>Customer & Developer Access Portal</h1>
+      <p>This test website is connected to your Breach Domino Simulator via <code>breach_sentinel.js</code></p>
+    </div>
+
+    <div class="card">
+      <div class="presets-label">⚡ 1-Click Exploit Presets (Click any to test):</div>
+      <div class="presets-grid">
+        <button type="button" class="preset-btn" onclick="applyPreset('sqli', 'admin\' OR 1=1 --', 'docker-edge-api-gw')">
+          💉 <b>SQL Injection</b><br>
+          <small>admin' OR 1=1 --</small>
+        </button>
+        <button type="button" class="preset-btn" onclick="applyPreset('leaked_api_key', 'AKIAIOSFODNN7EXAMPLEREDTEAM', 'node-dev-laptop')">
+          🔑 <b>Leaked AWS Key</b><br>
+          <small>AKIAIOSFODNN7...</small>
+        </button>
+        <button type="button" class="preset-btn" onclick="applyPreset('path_traversal', '../../../../etc/shadow', 'node-dmz-proxy')">
+          📂 <b>Path Traversal</b><br>
+          <small>../../etc/shadow</small>
+        </button>
+        <button type="button" class="preset-btn" onclick="applyPreset('printer_overflow', 'HP_RAW_SOCKET_BUFFER_OVERFLOW', 'node-printer')">
+          🖨️ <b>IoT Printer Exploit</b><br>
+          <small>CVE-2023-3519</small>
+        </button>
+      </div>
+
+      <form id="login-form" onsubmit="handleFormSubmit(event)">
+        <div class="form-group">
+          <label for="username">Username / Email / API Access Key</label>
+          <input type="text" id="username" value="admin' OR 1=1 --" placeholder="Enter username or payload..." required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password / Secret</label>
+          <input type="password" id="password" value="secret_pass_123" />
+        </div>
+        <button type="submit" class="btn-submit">🚀 Submit Payload & Trigger Live Outbreak</button>
+      </form>
+
+      <div id="response-box" class="response-box"></div>
+    </div>
+
+    <div class="sdk-guide">
+      <b>💡 How to use this with ANY other website:</b><br>
+      To connect any other website (React, Vue, WordPress, plain HTML), just add this single line to its HTML:<br>
+      <code>&lt;script src="http://localhost:8000/site/breach_sentinel.js"&gt;&lt;/script&gt;</code><br>
+      Then call <code>BreachSentinel.reportExploit({ vector: 'sqli', input: "..." })</code> whenever an exploit or invalid attempt occurs!
+    </div>
+  </div>
+
+  <script>
+    let activeVector = 'sqli';
+    let targetOverride = null;
+
+    function applyPreset(vector, payload, targetNode) {
+      activeVector = vector;
+      targetOverride = targetNode || null;
+      document.getElementById('username').value = payload;
+      handleFormSubmit(new Event('submit'));
+    }
+
+    async function handleFormSubmit(e) {
+      if (e) {
+        e.preventDefault();
+        e.__breach_reported = true;
+      }
+      const val = document.getElementById('username').value;
+      const box = document.getElementById('response-box');
+      box.style.display = 'block';
+      box.className = 'response-box loading';
+      box.innerHTML = '⏳ <i>Transmitting exploit payload to Breach Domino Sentinel...</i>';
+
+      // Auto-detect vector if user typed their own custom string
+      const detected = BreachSentinel.autoDetect(val) || activeVector;
+
+      const vectorToTarget = {
+        printer_overflow: 'node-printer',
+        leaked_api_key: 'node-dev-laptop',
+        path_traversal: 'node-dmz-proxy',
+        sqli: 'docker-edge-api-gw'
+      };
+      const finalTarget = targetOverride || vectorToTarget[detected] || 'docker-edge-api-gw';
+
+      const result = await BreachSentinel.reportExploit({
+        vector: detected,
+        input: val,
+        target: finalTarget
+      });
+
+      if (result.status === 'offline') {
+        box.className = 'response-box error';
+        box.innerHTML = `
+          <b>❌ SIMULATOR OFFLINE</b><br>
+          Could not communicate with Breach Domino backend at <code>${BreachSentinel.backendUrl}</code>.<br>
+          <small>Make sure the backend is running (<code>python -m uvicorn backend.main:app --port 8000</code>). Error: ${result.error || 'Connection refused'}</small>
+        `;
+        return;
+      }
+
+      box.className = 'response-box success';
+      box.innerHTML = `
+        <b>⚠️ INTRUSION DETECTED BY SENTINEL!</b><br>
+        <b>Vector:</b> <code>${result.vector || detected}</code> | <b>Entry Point:</b> <code>${result.entry_node || finalTarget}</code><br>
+        <b>Server Response:</b><br>
+        <span style="color:#fecaca;">${result.simulated_server_response || 'Exploit payload accepted. Outbreak launched!'}</span><br><br>
+        🔴 <i>The red infection wave is now rippling across the graph in <a href="/demo" target="_blank" style="color:#38bdf8;font-weight:bold;">/demo</a>!</i>
+      `;
+    }
+
+    // Automatically bind the form inputs to BreachSentinel (for background monitoring)
+    BreachSentinel.bindForm('#login-form', '#username');
+  </script>
+</body>
+</html>

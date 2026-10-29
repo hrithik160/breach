@@ -1,0 +1,12 @@
+{"ts": 1730000001000, "type": "node_compromised", "id": "node-printer", "payload": {"status": "compromised"}, "source": "replay"}
+{"ts": 1730000002500, "type": "edge_active_attack", "id": "e-printer-dev", "payload": {"status": "active_attack"}, "source": "replay"}
+{"ts": 1730000004000, "type": "node_compromised", "id": "node-dev-laptop", "payload": {"status": "compromised"}, "source": "replay"}
+{"ts": 1730000005500, "type": "cve_found", "id": "node-dev-laptop", "payload": {"vulnerabilities": ["CVE-2024-3094", "CVE-2023-38606"], "cvss_score": 8.8}, "source": "replay"}
+{"ts": 1730000007000, "type": "edge_active_attack", "id": "e-dev-build", "payload": {"status": "active_attack"}, "source": "replay"}
+{"ts": 1730000008500, "type": "node_compromised", "id": "node-build-server", "payload": {"status": "compromised"}, "source": "replay"}
+{"ts": 1730000010000, "type": "edge_active_attack", "id": "e-build-iam-cicd", "payload": {"status": "active_attack"}, "source": "replay"}
+{"ts": 1730000011500, "type": "node_compromised", "id": "node-iam-cicd", "payload": {"status": "compromised"}, "source": "replay"}
+{"ts": 1730000013000, "type": "edge_active_attack", "id": "e-iam-cicd-iam-admin", "payload": {"status": "active_attack"}, "source": "replay"}
+{"ts": 1730000014500, "type": "node_compromised", "id": "node-iam-admin", "payload": {"status": "compromised"}, "source": "replay"}
+{"ts": 1730000016000, "type": "edge_active_attack", "id": "e-iam-admin-crown", "payload": {"status": "active_attack"}, "source": "replay"}
+{"ts": 1730000017500, "type": "node_compromised", "id": "node-prod-crown-jewel", "payload": {"status": "compromised"}, "source": "replay"}
